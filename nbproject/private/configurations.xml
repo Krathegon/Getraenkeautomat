@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="cmake-modules">
+      </df>
+      <df name="nxprdlib">
+        <df name="comps">
+          <df name="phacDiscLoop">
+            <df name="src">
+              <df name="Sw">
+                <in>phacDiscLoop_Sw.c</in>
+                <in>phacDiscLoop_Sw.h</in>
+                <in>phacDiscLoop_Sw_Int.c</in>
+                <in>phacDiscLoop_Sw_Int.h</in>
+              </df>
+              <in>phacDiscLoop.c</in>
+            </df>
+          </df>
+          <df name="phalFelica">
+            <df name="src">
+              <df name="Sw">
+                <in>phalFelica_Sw.c</in>
+                <in>phalFelica_Sw.h</in>
+              </df>
+              <in>phalFelica.c</in>
+              <in>phalFelica_Int.h</in>
+            </df>
+          </df>
+          <df name="phalMfc">
+            <df name="src">
+              <df name="Sw">
+                <in>phalMfc_Sw.c</in>
+                <in>phalMfc_Sw.h</in>
+              </df>
+              <in>phalMfc.c</in>
+              <in>phalMfc_Int.c</in>
+              <in>phalMfc_Int.h</in>
+            </df>
+          </df>
+          <df name="phalMfdf">
+            <df name="src">
+              <df name="Sw">
+                <in>phalMfdf_Sw.c</in>
+                <in>phalMfdf_Sw.h</in>
+                <in>phalMfdf_Sw_Int.c</in>
+                <in>phalMfdf_Sw_Int.h</in>
+              </df>
+              <in>phalMfdf.c</in>
+              <in>phalMfdf_Int.c</in>
+              <in>phalMfdf_Int.h</in>
+            </df>
+          </df>
+          <df name="phalMful">
+            <df name="src">
+              <df name="Sw">
+                <in>phalMful_Sw.c</in>
+                <in>phalMful_Sw.h</in>
+              </df>
+              <in>phalMful.c</in>
+              <in>phalMful_Int.c</in>
+              <in>phalMful_Int.h</in>
+            </df>
+          </df>
+          <df name="phalT1T">
+            <df name="src">
+              <df name="Sw">
+                <in>phalT1T_Sw.c</in>
+                <in>phalT1T_Sw.h</in>
+              </df>
+              <in>phalT1T.c</in>
+            </df>
+          </df>
+          <df name="phalTop">
+            <df name="src">
+              <df name="Sw">
+                <in>phalTop_Sw.c</in>
+                <in>phalTop_Sw.h</in>
+                <in>phalTop_Sw_Int_T1T.c</in>
+                <in>phalTop_Sw_Int_T1T.h</in>
+                <in>phalTop_Sw_Int_T2T.c</in>
+                <in>phalTop_Sw_Int_T2T.h</in>
+                <in>phalTop_Sw_Int_T3T.c</in>
+                <in>phalTop_Sw_Int_T3T.h</in>
+                <in>phalTop_Sw_Int_T4T.c</in>
+                <in>phalTop_Sw_Int_T4T.h</in>
+              </df>
+              <in>phalTop.c</in>
+            </df>
+          </df>
+          <df name="phbalReg">
+            <df name="src">
+              <df name="Stub">
+                <in>phbalReg_Stub.h</in>
+              </df>
+              <in>phBalReg_RpiSpi.c</in>
+              <in>phbalReg.c</in>
+            </df>
+          </df>
+          <df name="phCidManager">
+            <df name="src">
+              <df name="Sw">
+                <in>phCidManager_Sw.c</in>
+                <in>phCidManager_Sw.h</in>
+              </df>
+              <in>phCidManager.c</in>
+            </df>
+          </df>
+          <df name="phhalHw">
+            <df name="src">
+              <df name="Callback">
+                <in>phhalHw_Callback.c</in>
+                <in>phhalHw_Callback.h</in>
+              </df>
+              <df name="Rc523">
+                <in>phhalHw_Rc523.c</in>
+                <in>phhalHw_Rc523.h</in>
+                <in>phhalHw_Rc523_Cmd.c</in>
+                <in>phhalHw_Rc523_Config.h</in>
+                <in>phhalHw_Rc523_Int.c</in>
+                <in>phhalHw_Rc523_Int.h</in>
+                <in>phhalHw_Rc523_Wait.c</in>
+              </df>
+              <df name="Rc663">
+                <in>phhalHw_Rc663.c</in>
+                <in>phhalHw_Rc663.h</in>
+                <in>phhalHw_Rc663_Cmd.c</in>
+                <in>phhalHw_Rc663_Config.h</in>
+                <in>phhalHw_Rc663_Int.c</in>
+                <in>phhalHw_Rc663_Int.h</in>
+                <in>phhalHw_Rc663_Wait.c</in>
+              </df>
+              <in>phhalHw.c</in>
+            </df>
+          </df>
+          <df name="phKeyStore">
+            <df name="src">
+              <df name="Rc663">
+                <in>phKeyStore_Rc663.c</in>
+                <in>phKeyStore_Rc663.h</in>
+                <in>phKeyStore_Rc663_Int.h</in>
+              </df>
+              <df name="Sw">
+                <in>phKeyStore_Sw.c</in>
+                <in>phKeyStore_Sw.h</in>
+                <in>phKeyStore_Sw_Int.h</in>
+              </df>
+              <in>phKeyStore.c</in>
+              <in>phKeyStore_Int.h</in>
+            </df>
+          </df>
+          <df name="phlnLlcp">
+            <df name="src">
+              <df name="Fri">
+                <in>phlnLlcp_Fri_Llcp.c</in>
+                <in>phlnLlcp_Fri_Llcp.h</in>
+                <in>phlnLlcp_Fri_Mac.c</in>
+                <in>phlnLlcp_Fri_Mac.h</in>
+                <in>phlnLlcp_Fri_MacNfcip.c</in>
+                <in>phlnLlcp_Fri_MacNfcip.h</in>
+                <in>phlnLlcp_Fri_OvrHal.c</in>
+                <in>phlnLlcp_Fri_OvrHal.h</in>
+                <in>phlnLlcp_Fri_Transport.c</in>
+                <in>phlnLlcp_Fri_Transport.h</in>
+                <in>phlnLlcp_Fri_Transport_Connection.c</in>
+                <in>phlnLlcp_Fri_Transport_Connection.h</in>
+                <in>phlnLlcp_Fri_Transport_Connectionless.c</in>
+                <in>phlnLlcp_Fri_Transport_Connectionless.h</in>
+                <in>phlnLlcp_Fri_Utils.c</in>
+                <in>phlnLlcp_Fri_Utils.h</in>
+              </df>
+              <in>phlnLlcp.c</in>
+            </df>
+          </df>
+          <df name="phLog">
+            <df name="src">
+              <in>phLog.c</in>
+              <in>phLog_Int.h</in>
+            </df>
+          </df>
+          <df name="phnpSnep">
+            <df name="src">
+              <df name="Fri">
+                <in>phnpSnep_Fri.c</in>
+                <in>phnpSnep_Fri.h</in>
+                <in>phnpSnep_Fri_ContextMgmt.c</in>
+                <in>phnpSnep_Fri_ContextMgmt.h</in>
+                <in>phnpSnep_Fri_Utils.c</in>
+                <in>phnpSnep_Fri_Utils.h</in>
+              </df>
+              <in>phnpSnep.c</in>
+            </df>
+          </df>
+          <df name="phOsal">
+            <df name="src">
+              <df name="Stub">
+                <in>phOsal_Stub.h</in>
+              </df>
+              <in>phOsal.c</in>
+              <in>phOsal_GLib.c</in>
+            </df>
+          </df>
+          <df name="phpalFelica">
+            <df name="src">
+              <df name="Sw">
+                <in>phpalFelica_Sw.c</in>
+                <in>phpalFelica_Sw.h</in>
+                <in>phpalFelica_Sw_Int.h</in>
+              </df>
+              <in>phpalFelica.c</in>
+            </df>
+          </df>
+          <df name="phpalI14443p3a">
+            <df name="src">
+              <df name="Sw">
+                <in>phpalI14443p3a_Sw.c</in>
+                <in>phpalI14443p3a_Sw.h</in>
+                <in>phpalI14443p3a_Sw_Int.h</in>
+              </df>
+              <in>phpalI14443p3a.c</in>
+            </df>
+          </df>
+          <df name="phpalI14443p3b">
+            <df name="src">
+              <df name="Sw">
+                <in>phpalI14443p3b_Sw.c</in>
+                <in>phpalI14443p3b_Sw.h</in>
+                <in>phpalI14443p3b_Sw_Int.h</in>
+              </df>
+              <in>phpalI14443p3b.c</in>
+            </df>
+          </df>
+          <df name="phpalI14443p4">
+            <df name="src">
+              <df name="Sw">
+                <in>phpalI14443p4_Sw.c</in>
+                <in>phpalI14443p4_Sw.h</in>
+                <in>phpalI14443p4_Sw_Int.h</in>
+              </df>
+              <in>phpalI14443p4.c</in>
+            </df>
+          </df>
+          <df name="phpalI14443p4a">
+            <df name="src">
+              <df name="Sw">
+                <in>phpalI14443p4a_Sw.c</in>
+                <in>phpalI14443p4a_Sw.h</in>
+                <in>phpalI14443p4a_Sw_Int.h</in>
+              </df>
+              <in>phpalI14443p4a.c</in>
+            </df>
+          </df>
+          <df name="phpalI18092mPI">
+            <df name="src">
+              <df name="Sw">
+                <in>phpalI18092mPI_Sw.c</in>
+                <in>phpalI18092mPI_Sw.h</in>
+                <in>phpalI18092mPI_Sw_Int.c</in>
+                <in>phpalI18092mPI_Sw_Int.h</in>
+              </df>
+              <in>phpalI18092mPI.c</in>
+            </df>
+          </df>
+          <df name="phpalI18092mT">
+            <df name="src">
+              <df name="Sw">
+                <in>phpalI18092mT_Sw.c</in>
+                <in>phpalI18092mT_Sw.h</in>
+                <in>phpalI18092mT_Sw_Int.c</in>
+                <in>phpalI18092mT_Sw_Int.h</in>
+              </df>
+              <in>phpalI18092mT.c</in>
+            </df>
+          </df>
+          <df name="phpalMifare">
+            <df name="src">
+              <df name="Sw">
+                <in>phpalMifare_Sw.c</in>
+                <in>phpalMifare_Sw.h</in>
+              </df>
+              <in>phpalMifare.c</in>
+              <in>phpalMifare_Int.h</in>
+            </df>
+          </df>
+          <df name="phTools">
+            <df name="src">
+              <in>phTools.c</in>
+            </df>
+          </df>
+        </df>
+        <df name="docs">
+          <df name="14_user_doc">
+          </df>
+          <df name="22_rel_doc">
+          </df>
+        </df>
+        <df name="intfs">
+          <in>phCidManager.h</in>
+          <in>phKeyStore.h</in>
+          <in>phLog.h</in>
+          <in>phOsal.h</in>
+          <in>phOsal_GLib.h</in>
+          <in>phOsal_GLib_Int.h</in>
+          <in>phTools.h</in>
+          <in>phacDiscLoop.h</in>
+          <in>phalFelica.h</in>
+          <in>phalMfc.h</in>
+          <in>phalMfdf.h</in>
+          <in>phalMfdfEv2.h</in>
+          <in>phalMful.h</in>
+          <in>phalT1T.h</in>
+          <in>phalTop.h</in>
+          <in>phbalReg.h</in>
+          <in>phbalReg_RpiSpi.h</in>
+          <in>phhalHw.h</in>
+          <in>phhalHw_Rc523_Cmd.h</in>
+          <in>phhalHw_Rc523_Reg.h</in>
+          <in>phhalHw_Rc663_Cmd.h</in>
+          <in>phhalHw_Rc663_Reg.h</in>
+          <in>phlnLlcp.h</in>
+          <in>phnpSnep.h</in>
+          <in>phpalFelica.h</in>
+          <in>phpalI14443p3a.h</in>
+          <in>phpalI14443p3b.h</in>
+          <in>phpalI14443p4.h</in>
+          <in>phpalI14443p4a.h</in>
+          <in>phpalI18092mPI.h</in>
+          <in>phpalI18092mT.h</in>
+          <in>phpalMifare.h</in>
+        </df>
+        <df name="types">
+          <in>ph_NxpBuild.h</in>
+          <in>ph_RefDefs.h</in>
+          <in>ph_Status.h</in>
+          <in>ph_TypeDefs.h</in>
+        </df>
+      </df>
+      <df name="NxpRdLib_PublicReleaseb">
+        <df name="comps">
+          <df name="phalMfc">
+            <df name="src">
+              <df name="Sw">
+                <in>phalMfc_Sw.c</in>
+                <in>phalMfc_Sw.h</in>
+              </df>
+              <in>phalMfc.c</in>
+              <in>phalMfc_Int.c</in>
+              <in>phalMfc_Int.h</in>
+            </df>
+          </df>
+          <df name="phalMful">
+            <df name="src">
+              <df name="Sw">
+                <in>phalMful_Sw.c</in>
+                <in>phalMful_Sw.h</in>
+              </df>
+              <in>phalMful.c</in>
+              <in>phalMful_Int.c</in>
+              <in>phalMful_Int.h</in>
+            </df>
+          </df>
+          <df name="phbalReg">
+            <df name="src">
+              <df name="PcscWin">
+                <in>phbalReg_PcscWin.c</in>
+                <in>phbalReg_PcscWin.h</in>
+                <in>phbalReg_PcscWin_Int.h</in>
+              </df>
+              <df name="R_Pi_spi">
+                <in>phbalReg_R_Pi_spi.c</in>
+                <in>phbalReg_R_Pi_spi.h</in>
+              </df>
+              <df name="Rd70xUsbWin">
+                <df name="external">
+                  <in>Devioctl.h</in>
+                  <in>Usb100.h</in>
+                  <in>Usbdi.h</in>
+                  <in>Usbioctl.h</in>
+                  <in>Usbioctls.h</in>
+                </df>
+                <in>phbalReg_Rd70xUsbWin.c</in>
+                <in>phbalReg_Rd70xUsbWin.h</in>
+                <in>phbalReg_Rd70xUsbWin_Int.c</in>
+                <in>phbalReg_Rd70xUsbWin_Int.h</in>
+              </df>
+              <df name="SerialWin">
+                <in>phbalReg_SerialWin.c</in>
+                <in>phbalReg_SerialWin.h</in>
+                <in>phbalReg_SerialWin_Int.h</in>
+              </df>
+              <df name="Stub">
+                <in>phbalReg_Stub.c</in>
+                <in>phbalReg_Stub.h</in>
+              </df>
+              <in>phbalReg.c</in>
+            </df>
+          </df>
+          <df name="phCidManager">
+            <df name="src">
+              <df name="Rd710">
+                <in>phCidManager_Rd710.c</in>
+                <in>phCidManager_Rd710.h</in>
+              </df>
+              <df name="Sw">
+                <in>phCidManager_Sw.c</in>
+                <in>phCidManager_Sw.h</in>
+              </df>
+              <in>phCidManager.c</in>
+            </df>
+          </df>
+          <df name="phhalHw">
+            <df name="src">
+              <df name="Callback">
+                <in>phhalHw_Callback.c</in>
+                <in>phhalHw_Callback.h</in>
+              </df>
+              <df name="Rc523">
+                <in>phhalHw_Rc523.c</in>
+                <in>phhalHw_Rc523.h</in>
+                <in>phhalHw_Rc523_Cmd.c</in>
+                <in>phhalHw_Rc523_Config.h</in>
+                <in>phhalHw_Rc523_Int.c</in>
+                <in>phhalHw_Rc523_Int.h</in>
+                <in>phhalHw_Rc523_Wait.c</in>
+              </df>
+              <df name="Rc632">
+                <in>phhalHw_Rc632.c</in>
+                <in>phhalHw_Rc632.h</in>
+                <in>phhalHw_Rc632_Cmd.c</in>
+                <in>phhalHw_Rc632_Config.h</in>
+                <in>phhalHw_Rc632_Int.c</in>
+                <in>phhalHw_Rc632_Int.h</in>
+              </df>
+              <df name="Rc663">
+                <in>phhalHw_Rc663.c</in>
+                <in>phhalHw_Rc663.h</in>
+                <in>phhalHw_Rc663_Cmd.c</in>
+                <in>phhalHw_Rc663_Config.h</in>
+                <in>phhalHw_Rc663_Int.c</in>
+                <in>phhalHw_Rc663_Int.h</in>
+                <in>phhalHw_Rc663_Wait.c</in>
+              </df>
+              <df name="Rd70x">
+                <in>phhalHw_Rd70x.c</in>
+                <in>phhalHw_Rd70x.h</in>
+                <in>phhalHw_Rd70x_Cmd.c</in>
+                <in>phhalHw_Rd70x_Int.c</in>
+                <in>phhalHw_Rd70x_Int.h</in>
+              </df>
+              <df name="Rd710">
+                <in>phhalHw_Rd710.c</in>
+                <in>phhalHw_Rd710.h</in>
+                <in>phhalHw_Rd710_Cmd.c</in>
+                <in>phhalHw_Rd710_Int.c</in>
+                <in>phhalHw_Rd710_Int.h</in>
+              </df>
+              <in>phhalHw.c</in>
+            </df>
+          </df>
+          <df name="phKeyStore">
+            <df name="src">
+              <df name="Rc632">
+                <in>phKeyStore_Rc632.c</in>
+                <in>phKeyStore_Rc632.h</in>
+                <in>phKeyStore_Rc632_Int.h</in>
+              </df>
+              <df name="Rc663">
+                <in>phKeyStore_Rc663.c</in>
+                <in>phKeyStore_Rc663.h</in>
+                <in>phKeyStore_Rc663_Int.h</in>
+              </df>
+              <df name="Rd710">
+                <in>phKeyStore_Rd710.c</in>
+                <in>phKeyStore_Rd710.h</in>
+              </df>
+              <df name="Sw">
+                <in>phKeyStore_Sw.c</in>
+                <in>phKeyStore_Sw.h</in>
+                <in>phKeyStore_Sw_Int.h</in>
+              </df>
+              <in>phKeyStore.c</in>
+              <in>phKeyStore_Int.h</in>
+            </df>
+          </df>
+          <df name="phLog">
+            <df name="src">
+              <in>phLog.c</in>
+              <in>phLog_Int.h</in>
+            </df>
+          </df>
+          <df name="phpalEpcUid">
+            <df name="src">
+              <df name="Sw">
+                <in>phpalEpcUid_Sw.c</in>
+                <in>phpalEpcUid_Sw.h</in>
+                <in>phpalEpcUid_Sw_Int.h</in>
+              </df>
+              <in>phpalEpcUid.c</in>
+            </df>
+          </df>
+          <df name="phpalFelica">
+            <df name="src">
+              <df name="Sw">
+                <in>phpalFelica_Sw.c</in>
+                <in>phpalFelica_Sw.h</in>
+                <in>phpalFelica_Sw_Int.h</in>
+              </df>
+              <in>phpalFelica.c</in>
+            </df>
+          </df>
+          <df name="phpalI14443p3a">
+            <df name="src">
+              <df name="Rd70x">
+                <in>phpalI14443p3a_Rd70x.c</in>
+                <in>phpalI14443p3a_Rd70x.h</in>
+              </df>
+              <df name="Rd710">
+                <in>phpalI14443p3a_Rd710.c</in>
+                <in>phpalI14443p3a_Rd710.h</in>
+              </df>
+              <df name="Sw">
+                <in>phpalI14443p3a_Sw.c</in>
+                <in>phpalI14443p3a_Sw.h</in>
+                <in>phpalI14443p3a_Sw_Int.h</in>
+              </df>
+              <in>phpalI14443p3a.c</in>
+            </df>
+          </df>
+          <df name="phpalI14443p3b">
+            <df name="src">
+              <df name="Sw">
+                <in>phpalI14443p3b_Sw.c</in>
+                <in>phpalI14443p3b_Sw.h</in>
+                <in>phpalI14443p3b_Sw_Int.h</in>
+              </df>
+              <in>phpalI14443p3b.c</in>
+            </df>
+          </df>
+          <df name="phpalI14443p4">
+            <df name="src">
+              <df name="Rd710">
+                <in>phpalI14443p4_Rd710.c</in>
+                <in>phpalI14443p4_Rd710.h</in>
+              </df>
+              <df name="Sw">
+                <in>phpalI14443p4_Sw.c</in>
+                <in>phpalI14443p4_Sw.h</in>
+                <in>phpalI14443p4_Sw_Int.h</in>
+              </df>
+              <in>phpalI14443p4.c</in>
+            </df>
+          </df>
+          <df name="phpalI14443p4a">
+            <df name="src">
+              <df name="Rd710">
+                <in>phpalI14443p4a_Rd710.c</in>
+                <in>phpalI14443p4a_Rd710.h</in>
+              </df>
+              <df name="Sw">
+                <in>phpalI14443p4a_Sw.c</in>
+                <in>phpalI14443p4a_Sw.h</in>
+                <in>phpalI14443p4a_Sw_Int.h</in>
+              </df>
+              <in>phpalI14443p4a.c</in>
+            </df>
+          </df>
+          <df name="phpalI18092mPI">
+            <df name="src">
+              <df name="Sw">
+                <in>phpalI18092mPI_Sw.c</in>
+                <in>phpalI18092mPI_Sw.h</in>
+                <in>phpalI18092mPI_Sw_Int.c</in>
+                <in>phpalI18092mPI_Sw_Int.h</in>
+              </df>
+              <in>phpalI18092mPI.c</in>
+            </df>
+          </df>
+          <df name="phpalMifare">
+            <df name="src">
+              <df name="Rd710">
+                <in>phpalMifare_Rd710.c</in>
+                <in>phpalMifare_Rd710.h</in>
+              </df>
+              <df name="Stub">
+                <in>phpalMifare_Stub.c</in>
+                <in>phpalMifare_Stub.h</in>
+              </df>
+              <df name="Sw">
+                <in>phpalMifare_Sw.c</in>
+                <in>phpalMifare_Sw.h</in>
+              </df>
+              <in>phpalMifare.c</in>
+              <in>phpalMifare_Int.h</in>
+            </df>
+          </df>
+          <df name="phpalSli15693">
+            <df name="src">
+              <df name="Sw">
+                <in>phpalSli15693_Sw.c</in>
+                <in>phpalSli15693_Sw.h</in>
+                <in>phpalSli15693_Sw_Int.h</in>
+              </df>
+              <in>phpalSli15693.c</in>
+            </df>
+          </df>
+          <df name="phTools">
+            <df name="src">
+              <in>phTools.c</in>
+            </df>
+          </df>
+        </df>
+        <df name="docs">
+          <df name="14_user_doc">
+          </df>
+          <df name="22_rel_doc">
+          </df>
+        </df>
+        <df name="intfs">
+          <in>phCidManager.h</in>
+          <in>phKeyStore.h</in>
+          <in>phLog.h</in>
+          <in>phTools.h</in>
+          <in>phalMfc.h</in>
+          <in>phalMful.h</in>
+          <in>phbalReg.h</in>
+          <in>phhalHw.h</in>
+          <in>phhalHw_Rc523_Reg.h</in>
+          <in>phhalHw_Rc632_Cmd.h</in>
+          <in>phhalHw_Rc632_Reg.h</in>
+          <in>phhalHw_Rc663_Cmd.h</in>
+          <in>phhalHw_Rc663_Reg.h</in>
+          <in>phhalHw_Rd70x_Cmd.h</in>
+          <in>phhalHw_Rd70x_Reg.h</in>
+          <in>phhalHw_Rd710_Cmd.h</in>
+          <in>phpalEpcUid.h</in>
+          <in>phpalFelica.h</in>
+          <in>phpalI14443p3a.h</in>
+          <in>phpalI14443p3b.h</in>
+          <in>phpalI14443p4.h</in>
+          <in>phpalI14443p4a.h</in>
+          <in>phpalI18092mPI.h</in>
+          <in>phpalMifare.h</in>
+          <in>phpalSli15693.h</in>
+        </df>
+        <df name="types">
+          <in>ph_RefDefs.h</in>
+          <in>ph_Status.h</in>
+          <in>ph_TypeDefs.h</in>
+        </df>
+      </df>
+      <in>CWBoard.cpp</in>
+      <in>CWBoard.h</in>
+      <in>Card.cpp</in>
+      <in>Card.h</in>
+      <in>NXP.cpp</in>
+      <in>NXP.h</in>
+      <in>RFIDBoard.cpp</in>
+      <in>RFIDBoard.h</in>
+      <in>SerialDevice.cpp</in>
+      <in>SerialDevice.h</in>
+      <in>main.cpp</in>
+      <in>protocol.cpp</in>
+      <in>protocol.h</in>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

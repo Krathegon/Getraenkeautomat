@@ -1,0 +1,238 @@
+Scanning dependencies of target card_polling
+[  1%] Building C object CMakeFiles/card_polling.dir/main.c.o
+[  2%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c.o
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c: In function ‘phnpSnep_Fri_Llcp_ConnectSocket_Cb’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c:154:74: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                                                          (phlnLlcp_Fri_Transport_Socket_t *) pClientSession->hSnepClientHandle,
+                                                                          ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c: In function ‘phnpSnep_Fri_Llcp_AcceptSocket_Cb’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c:215:73: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                                                         (phlnLlcp_Fri_Transport_Socket_t *) pServerConn->hSnepServerConnHandle,
+                                                                         ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c:242:43: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                           (phlnLlcp_Fri_Transport_Socket_t *) pServerConn->hSnepServerConnHandle,
+                                           ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c: In function ‘phnpSnep_Fri_Server_Init’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c:317:47: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                               (phlnLlcp_Fri_Transport_Socket_t *) pServerSession->hSnepServerHandle,
+                                               ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c:329:47: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                               (phlnLlcp_Fri_Transport_Socket_t *) pServerSession->hSnepServerHandle,
+                                               ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c:342:49: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                                 (phlnLlcp_Fri_Transport_Socket_t *) pServerSession->hSnepServerHandle,
+                                                 ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c:353:49: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                                 (phlnLlcp_Fri_Transport_Socket_t *) pServerSession->hSnepServerHandle,
+                                                 ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c: In function ‘phnpSnep_Fri_Server_Accept’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c:458:48: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                                (phlnLlcp_Fri_Transport_Socket_t *)ConnHandle,
+                                                ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c: In function ‘phnpSnep_Fri_Client_Init’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c:576:54: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                                      (phlnLlcp_Fri_Transport_Socket_t *) pClientSession->hSnepClientHandle,
+                                                      ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c:586:55: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                                       (phlnLlcp_Fri_Transport_Socket_t *) pClientSession->hSnepClientHandle,
+                                                       ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c: In function ‘phnpSnep_Fri_ClientReqPut’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c:685:14: warning: comparison between pointer and integer
+         NULL == ConnHandle )
+              ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c: In function ‘phnpSnep_Fri_ClientReqGet’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c:768:15: warning: comparison between pointer and integer
+          NULL == ConnHandle )
+               ^
+[  3%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c.o
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c: In function ‘phnpSnep_Fri_Utils_Req’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:86:57: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     phlnLlcp_Fri_Transport_Socket_t *psLocalLlcpSocket =(phlnLlcp_Fri_Transport_Socket_t *) pClientSessionContext->hSnepClientHandle;
+                                                         ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:118:38: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                      (phlnLlcp_Fri_Transport_Socket_t *) pClientSessionContext->hSnepClientHandle,
+                                      ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c: In function ‘phnpSnep_Fri_Utils_SendResponse’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:142:58: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     phlnLlcp_Fri_Transport_Socket_t *psLocalLlcpSocket = (phlnLlcp_Fri_Transport_Socket_t *) pSnepServerConnection->hSnepServerConnHandle;
+                                                          ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:171:35: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                   (phlnLlcp_Fri_Transport_Socket_t *) pSnepServerConnection->hSnepServerConnHandle,
+                                   ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c: In function ‘phnpSnep_Fri_Utils_SocketSendCb’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:197:60: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     phlnLlcp_Fri_Transport_Socket_t    *psLocalLlcpSocket =(phlnLlcp_Fri_Transport_Socket_t *) pClientSessionContext->hSnepClientHandle;
+                                                            ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:217:48: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                                (phlnLlcp_Fri_Transport_Socket_t *) pClientSessionContext->hSnepClientHandle,
+                                                ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:246:51: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                                   (phlnLlcp_Fri_Transport_Socket_t *) pClientSessionContext->hSnepClientHandle,
+                                                   ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c: In function ‘phnpSnep_Fri_Utils_SocketSendData’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:346:59: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     phlnLlcp_Fri_Transport_Socket_t   *psLocalLlcpSocket =(phlnLlcp_Fri_Transport_Socket_t *) pClientSessionContext->hSnepClientHandle;
+                                                           ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:352:40: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                        (phlnLlcp_Fri_Transport_Socket_t *) pClientSessionContext->hSnepClientHandle,
+                                        ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c: In function ‘phnpSnep_Fri_Utils_SocketReceiveData’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:384:39: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                       (phlnLlcp_Fri_Transport_Socket_t *) pServerConnectionContext->hSnepServerConnHandle,
+                                       ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c: In function ‘phnpSnep_Fri_Utils_SocketSendDataServer’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:398:60: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     phlnLlcp_Fri_Transport_Socket_t    *psLocalLlcpSocket =(phlnLlcp_Fri_Transport_Socket_t *) pServerConnectionContext->hSnepServerConnHandle;
+                                                            ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:404:41: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                         (phlnLlcp_Fri_Transport_Socket_t *) pServerConnectionContext->hSnepServerConnHandle,
+                                         ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c: In function ‘phnpSnep_Fri_Utils_LlcpSocketSendResponseCb’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:427:61: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     phlnLlcp_Fri_Transport_Socket_t    *psLocalLlcpSocket = (phlnLlcp_Fri_Transport_Socket_t *) pSnepServerConnection->hSnepServerConnHandle;
+                                                             ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:441:52: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                                    (phlnLlcp_Fri_Transport_Socket_t *) pSnepServerConnection->hSnepServerConnHandle,
+                                                    ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:464:52: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                                    (phlnLlcp_Fri_Transport_Socket_t *) pSnepServerConnection->hSnepServerConnHandle,
+                                                    ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c: In function ‘phnpSnep_Fri_Utils_CollectReply’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:685:36: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                    (phlnLlcp_Fri_Transport_Socket_t *) pClientSessionContext->hSnepClientHandle,
+                                    ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c: In function ‘phnpSnep_Fri_Utils_SendRequestContinue’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:901:61: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     phlnLlcp_Fri_Transport_Socket_t   *psLocalLlcpSocket =  (phlnLlcp_Fri_Transport_Socket_t *) pClientSessionContext->hSnepClientHandle;
+                                                             ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:915:36: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                    (phlnLlcp_Fri_Transport_Socket_t *) pClientSessionContext->hSnepClientHandle,
+                                    ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c: In function ‘phnpSnep_Fri_Utils_SendRequestReject’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:953:61: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     phlnLlcp_Fri_Transport_Socket_t   *psLocalLlcpSocket =  (phlnLlcp_Fri_Transport_Socket_t *) pClientSessionContext->hSnepClientHandle;
+                                                             ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:965:36: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                    (phlnLlcp_Fri_Transport_Socket_t *) pClientSessionContext->hSnepClientHandle,
+                                    ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c: In function ‘phnpSnep_Fri_Utils_LlcpSocketReceiveCb’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:1020:44: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                            (phlnLlcp_Fri_Transport_Socket_t *) pClientSessionContext->hSnepClientHandle,
+                                            ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c: In function ‘phnpSnep_Fri_Utils_ClearMemNCallResponseCb’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:1090:36: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                    (phlnLlcp_Fri_Transport_Socket_t *)pSnepServerConnection->hSnepServerConnHandle,
+                                    ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c: In function ‘phnpSnep_Fri_Utils_SocketRecvCbForServer’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:1285:39: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                       (phlnLlcp_Fri_Transport_Socket_t *) pServerConnectionContext->hSnepServerConnHandle,
+                                       ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c: In function ‘phnpSnep_Fri_Utils_ServerSendContinuecomplete’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:1345:38: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                      (phlnLlcp_Fri_Transport_Socket_t *) pSnepServerConnection->hSnepServerConnHandle,
+                                      ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c: In function ‘phnpSnep_Fri_Utils_ServerSendcompleteInternal’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c:1369:36: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                    (phlnLlcp_Fri_Transport_Socket_t *) pSnepServerConnection->hSnepServerConnHandle,
+                                    ^
+[  5%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_ContextMgmt.c.o
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_ContextMgmt.c: In function ‘phnpSnep_Fri_ContextMgmt_RemoveClientSession’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_ContextMgmt.c:430:57: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                                         (phlnLlcp_Fri_Transport_Socket_t *) pClientContext->pClientSession[count]->hSnepClientHandle
+                                                         ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_ContextMgmt.c: In function ‘phnpSnep_Fri_ContextMgmt_RemoveAllClientSessions’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_ContextMgmt.c:487:56: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                                        (phlnLlcp_Fri_Transport_Socket_t *) pClientContext->pClientSession[count]->hSnepClientHandle);
+                                                        ^
+[  6%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phnpSnep/src/phnpSnep.c.o
+In file included from /home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/phnpSnep.c:25:0:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/phnpSnep.c: In function ‘phnpSnep_Server_Accept’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/types/ph_Status.h:374:37: warning: comparison between pointer and integer
+ #define PH_ASSERT_NULL(a) while((a) == NULL);
+                                     ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/phnpSnep.c:312:5: note: in expansion of macro ‘PH_ASSERT_NULL’
+     PH_ASSERT_NULL (ServerHandle);
+     ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/phnpSnep.c: In function ‘phnpSnep_ServerSendResponse’:
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/types/ph_Status.h:374:37: warning: comparison between pointer and integer
+ #define PH_ASSERT_NULL(a) while((a) == NULL);
+                                     ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/phnpSnep.c:429:5: note: in expansion of macro ‘PH_ASSERT_NULL’
+     PH_ASSERT_NULL (fSendCompleteCb);
+     ^
+/home/fabian/NetBeansProjects/Getraenkeautomat/nxprdlib/comps/phnpSnep/src/phnpSnep.c:453:47: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+                                               (pphnpSnep_Fri_Protocol_SendRspCb_t) fSendCompleteCb,
+                                               ^
+[  7%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalI18092mT/src/Sw/phpalI18092mT_Sw_Int.c.o
+[  9%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalI18092mT/src/Sw/phpalI18092mT_Sw.c.o
+[ 10%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalI18092mT/src/phpalI18092mT.c.o
+[ 11%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalI14443p4/src/Sw/phpalI14443p4_Sw.c.o
+[ 13%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalI14443p4/src/phpalI14443p4.c.o
+[ 14%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalI18092mPI/src/Sw/phpalI18092mPI_Sw_Int.c.o
+[ 15%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalI18092mPI/src/Sw/phpalI18092mPI_Sw.c.o
+[ 17%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalI18092mPI/src/phpalI18092mPI.c.o
+[ 18%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Mac.c.o
+[ 19%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Transport_Connection.c.o
+[ 21%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Utils.c.o
+[ 22%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Llcp.c.o
+[ 23%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Transport_Connectionless.c.o
+[ 25%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Transport.c.o
+[ 26%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_MacNfcip.c.o
+[ 27%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_OvrHal.c.o
+[ 28%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phlnLlcp/src/phlnLlcp.c.o
+[ 30%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phbalReg/src/phBalReg_RpiSpi.c.o
+[ 31%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phbalReg/src/phbalReg.c.o
+[ 32%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phOsal/src/phOsal.c.o
+[ 34%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phOsal/src/phOsal_GLib.c.o
+[ 35%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phacDiscLoop/src/phacDiscLoop.c.o
+[ 36%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phacDiscLoop/src/Sw/phacDiscLoop_Sw_Int.c.o
+[ 38%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phacDiscLoop/src/Sw/phacDiscLoop_Sw.c.o
+[ 39%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phCidManager/src/Sw/phCidManager_Sw.c.o
+[ 40%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phCidManager/src/phCidManager.c.o
+[ 42%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalI14443p3b/src/Sw/phpalI14443p3b_Sw.c.o
+[ 43%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalI14443p3b/src/phpalI14443p3b.c.o
+[ 44%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalMful/src/Sw/phalMful_Sw.c.o
+[ 46%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalMful/src/phalMful.c.o
+[ 47%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalMful/src/phalMful_Int.c.o
+[ 48%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phLog/src/phLog.c.o
+[ 50%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phhalHw/src/Rc523/phhalHw_Rc523_Cmd.c.o
+[ 51%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phhalHw/src/Rc523/phhalHw_Rc523_Int.c.o
+[ 52%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phhalHw/src/Rc523/phhalHw_Rc523_Wait.c.o
+[ 53%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phhalHw/src/Rc523/phhalHw_Rc523.c.o
+[ 55%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phhalHw/src/Rc663/phhalHw_Rc663_Cmd.c.o
+[ 56%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phhalHw/src/Rc663/phhalHw_Rc663_Int.c.o
+[ 57%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phhalHw/src/Rc663/phhalHw_Rc663_Wait.c.o
+[ 59%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phhalHw/src/Rc663/phhalHw_Rc663.c.o
+[ 60%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phhalHw/src/phhalHw.c.o
+[ 61%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phhalHw/src/Callback/phhalHw_Callback.c.o
+[ 63%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phTools/src/phTools.c.o
+[ 64%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalMfc/src/phalMfc.c.o
+[ 65%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalMfc/src/Sw/phalMfc_Sw.c.o
+[ 67%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalMfc/src/phalMfc_Int.c.o
+[ 68%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalTop/src/phalTop.c.o
+[ 69%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalTop/src/Sw/phalTop_Sw_Int_T1T.c.o
+[ 71%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalTop/src/Sw/phalTop_Sw_Int_T4T.c.o
+[ 72%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalTop/src/Sw/phalTop_Sw_Int_T3T.c.o
+[ 73%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalTop/src/Sw/phalTop_Sw_Int_T2T.c.o
+[ 75%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalTop/src/Sw/phalTop_Sw.c.o
+[ 76%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalFelica/src/Sw/phpalFelica_Sw.c.o
+[ 77%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalFelica/src/phpalFelica.c.o
+[ 78%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalFelica/src/Sw/phalFelica_Sw.c.o
+[ 80%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalFelica/src/phalFelica.c.o
+[ 81%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phKeyStore/src/Rc663/phKeyStore_Rc663.c.o
+[ 82%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phKeyStore/src/Sw/phKeyStore_Sw.c.o
+[ 84%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phKeyStore/src/phKeyStore.c.o
+[ 85%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalI14443p3a/src/Sw/phpalI14443p3a_Sw.c.o
+[ 86%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalI14443p3a/src/phpalI14443p3a.c.o
+[ 88%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalMfdf/src/Sw/phalMfdf_Sw.c.o
+[ 89%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalMfdf/src/Sw/phalMfdf_Sw_Int.c.o
+[ 90%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalMfdf/src/phalMfdf_Int.c.o
+[ 92%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalMfdf/src/phalMfdf.c.o
+[ 93%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalI14443p4a/src/Sw/phpalI14443p4a_Sw.c.o
+[ 94%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalI14443p4a/src/phpalI14443p4a.c.o
+[ 96%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalT1T/src/Sw/phalT1T_Sw.c.o
+[ 97%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phalT1T/src/phalT1T.c.o
+[ 98%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalMifare/src/Sw/phpalMifare_Sw.c.o
+[100%] Building C object CMakeFiles/card_polling.dir/nxprdlib/comps/phpalMifare/src/phpalMifare.c.o
+Linking C executable card_polling
+[100%] Built target card_polling
