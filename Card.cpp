@@ -7,10 +7,12 @@
 
 #include "Card.h"
 
+Card::Card() {
+    id = "";
+    type = "";
+}
+
 Card::Card(string id, string type) {
     this->id = id;
     this->type = type;
-}
-
-Card::~Card() {
 }

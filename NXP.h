@@ -92,7 +92,6 @@ extern "C" {
 
 class NXP {
 public:
-    NXP();
     ~NXP();
     bool init();
     bool detectCard();

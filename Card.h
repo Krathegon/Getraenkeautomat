@@ -17,7 +17,6 @@ class Card {
 public:
     Card();
     Card(string id, string type);
-    ~Card();
     
     string id;
     string type;

@@ -7,6 +7,8 @@ project (Getraenkeautomat)
 #list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake-modules)
 #find_package(GLIB REQUIRED)
 
+add_subdirectory(cpr)
+
 include_directories (
 	#"${PROJECT_SOURCE_DIR}/wiringPi"
 	"${PROJECT_SOURCE_DIR}/nxprdlib/intfs"
@@ -15,10 +17,11 @@ include_directories (
 	"/usr/include/glib-2.0"
 	"/usr/lib/arm-linux-gnueabihf/glib-2.0/include"
 	"/usr/lib/x86_64-linux-gnu/glib-2.0/include"
+        ${CPR_INCLUDE_DIRS}
 )
 
 
-set(EXT_LIBS  pthread  wiringPi  glib-2.0  m)
+set(EXT_LIBS  pthread  wiringPi  glib-2.0  m ${CPR_LIBRARIES})
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 
 add_definitions(-g -O0)

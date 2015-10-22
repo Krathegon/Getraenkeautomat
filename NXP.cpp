@@ -9,9 +9,6 @@
 
 NXP nxp;
 
-NXP::NXP() {
-}
-
 NXP::~NXP() {
     phhalHw_FieldOff(pHal);
 }
