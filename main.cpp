@@ -12,6 +12,7 @@
 #include <chrono>
 #include <cerrno>
 #include <wiringPi.h>
+#include <cpr.h>
 
 #include "NXP.h"
 #include "SerialDevice.h"
@@ -85,6 +86,26 @@ void switchLED(int led, int state) {
 bool validCard(Card &card) {
     // TODO: check if card is valid (via web app)
     
+    // get card
+    // if null, put card
+    // else check user
+    
+    /*
+     * Response r = Get(Url{"https://api.github.com/repos/whoshuu/cpr/contributors"},
+     *                  Parameters{{"anon", "true"}, {"key", "value"}});
+     * cout << "Status: " << r.status_code << endl;                  // 200
+     * cout << "Header: " << r.header["content-type"] << endl;       // application/json; charset=utf-8
+     * cout << "Response: " << r.text << endl;                         // JSON text string
+     */
+    
+    /*
+     * auto r = Post(Url{"http://www.httpbin.org/post"},
+     *               Payload{{"key", "value"}});
+     * auto r = Put(Url{"http://www.httpbin.org/put"},
+     *              Payload{{"key", "value"}});
+     * 
+     */
+    
     return true;
 }
 
@@ -146,7 +167,9 @@ int main(int argc, char **argv)
     Card card;
     bool active = false;
     
-    init();
+    if(!init()) {
+        exit(EXIT_FAILURE);
+    }
 
     while(1)
     {
