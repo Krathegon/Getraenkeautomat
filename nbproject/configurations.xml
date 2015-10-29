@@ -268,8 +268,8 @@
           <cTool>
             <standard>10</standard>
             <incDir>
-              <pElem>nxprdlib/intfs</pElem>
-              <pElem>nxprdlib/types</pElem>
+              <pElem>lib/nxprdlib/intfs</pElem>
+              <pElem>lib/nxprdlib/types</pElem>
               <pElem>/usr/include/glib-2.0</pElem>
               <pElem>/usr/lib/arm-linux-gnueabihf/glib-2.0/include</pElem>
               <pElem>/usr/lib/x86_64-linux-gnu/glib-2.0/include</pElem>
@@ -279,8 +279,8 @@
           <ccTool>
             <standard>8</standard>
             <incDir>
-              <pElem>nxprdlib/intfs</pElem>
-              <pElem>nxprdlib/types</pElem>
+              <pElem>lib/nxprdlib/intfs</pElem>
+              <pElem>lib/nxprdlib/types</pElem>
               <pElem>/usr/include/glib-2.0</pElem>
               <pElem>/usr/lib/arm-linux-gnueabihf/glib-2.0/include</pElem>
               <pElem>/usr/lib/x86_64-linux-gnu/glib-2.0/include</pElem>

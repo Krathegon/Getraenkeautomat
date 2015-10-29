@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8.7)
 project(Getraenkeautomat)
 
+add_definitions(-g -O0)
+
 if(NOT ${CMAKE_VERSION} LESS 3.2)
     set(CMAKE_CXX_STANDARD 11)
     set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -31,6 +33,18 @@ endif()
 
 add_subdirectory(lib)
 
+include_directories( ${CPR_INCLUDE_DIRS}  ${JSON_INCLUDE_DIRS} )
+
+foreach(dir ${NXP_INCLUDE_DIRS})
+    include_directories( ${dir} )
+endforeach()
+
+foreach(dir ${GLIB_INCLUDE_DIRS})
+    include_directories( ${dir} )
+endforeach()
+
+set(EXT_LIBS  pthread  wiringPi  glib-2.0  m ${CPR_LIBRARIES})
+
 list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/main.cpp")
 list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/protocol.cpp")
 list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/NXP.cpp")
@@ -38,24 +52,10 @@ list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/SerialDevice.cpp")
 list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/CWBoard.cpp")
 list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/RFIDBoard.cpp")
 list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/Card.cpp")
-#source_group(src "${PROJECT_SOURCE_DIR}/main.cpp")
+source_group(src "${PROJECT_SOURCE_DIR}/main.cpp")
 
-file(GLOB_RECURSE SOURCE_TMP "${PROJECT_SOURCE_DIR}/nxprdlib/*.c" )
+file(GLOB_RECURSE SOURCE_TMP "${PROJECT_SOURCE_DIR}/lib/nxprdlib/*.c" )
 list(APPEND SOURCE ${SOURCE_TMP})
 
 add_executable(${PROJECT_NAME} ${SOURCE})
 target_link_libraries(${PROJECT_NAME} ${EXT_LIBS})
-
-include_directories(${CPR_INCLUDE_DIRS} ${JSON_INCLUDE_DIRS})
-
-foreach(dir ${NXP_INCLUDE_DIRS})
-      include_directories( ${dir} )
- endforeach()
-
-foreach(dir ${GLIB_INCLUDE_DIRS})
-      include_directories( ${dir} )
- endforeach()
-
-set(EXT_LIBS  pthread  wiringPi  glib-2.0  m ${CPR_LIBRARIES})
-
-add_definitions(-g -O0)

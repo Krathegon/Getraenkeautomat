@@ -2,6 +2,38 @@
 <configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
+      <df name="build">
+        <df name="CMakeFiles">
+          <df name="CMakeTmp">
+          </df>
+          <df name="CompilerIdC">
+            <in>CMakeCCompilerId.c</in>
+          </df>
+          <df name="CompilerIdCXX">
+            <in>CMakeCXXCompilerId.cpp</in>
+          </df>
+          <df name="Getraenkeautomat.dir">
+          </df>
+        </df>
+        <df name="lib">
+          <df name="CMakeFiles">
+          </df>
+          <df name="cpr">
+            <df name="CMakeFiles">
+            </df>
+            <df name="cpr">
+              <df name="CMakeFiles">
+                <df name="cpr.dir">
+                </df>
+              </df>
+            </df>
+            <df name="opt">
+              <df name="CMakeFiles">
+              </df>
+            </df>
+          </df>
+        </df>
+      </df>
       <df name="lib">
         <df name="cpr">
         </df>
@@ -521,10 +553,10 @@
       </nativedebugger>
       <runprofile version="9">
         <runcommandpicklist>
-          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
           <runcommandpicklistitem>sudo "${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
         </runcommandpicklist>
-        <runcommand>sudo "${OUTPUT_PATH}"</runcommand>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
         <rundir>/home/pi/Getraenkeautomat/build</rundir>
         <buildfirst>false</buildfirst>
         <terminal-type>0</terminal-type>
