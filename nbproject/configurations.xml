@@ -2,223 +2,225 @@
 <configurationDescriptor version="95">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
-      <df name="nxprdlib">
-        <df name="comps">
-          <df name="phacDiscLoop">
-            <df name="src">
-              <df name="Sw">
-                <in>phacDiscLoop_Sw.c</in>
-                <in>phacDiscLoop_Sw_Int.c</in>
+      <df name="lib">
+        <df name="nxprdlib">
+          <df name="comps">
+            <df name="phacDiscLoop">
+              <df name="src">
+                <df name="Sw">
+                  <in>phacDiscLoop_Sw.c</in>
+                  <in>phacDiscLoop_Sw_Int.c</in>
+                </df>
+                <in>phacDiscLoop.c</in>
               </df>
-              <in>phacDiscLoop.c</in>
             </df>
-          </df>
-          <df name="phalFelica">
-            <df name="src">
-              <df name="Sw">
-                <in>phalFelica_Sw.c</in>
+            <df name="phalFelica">
+              <df name="src">
+                <df name="Sw">
+                  <in>phalFelica_Sw.c</in>
+                </df>
+                <in>phalFelica.c</in>
               </df>
-              <in>phalFelica.c</in>
             </df>
-          </df>
-          <df name="phalMfc">
-            <df name="src">
-              <df name="Sw">
-                <in>phalMfc_Sw.c</in>
+            <df name="phalMfc">
+              <df name="src">
+                <df name="Sw">
+                  <in>phalMfc_Sw.c</in>
+                </df>
+                <in>phalMfc.c</in>
+                <in>phalMfc_Int.c</in>
               </df>
-              <in>phalMfc.c</in>
-              <in>phalMfc_Int.c</in>
             </df>
-          </df>
-          <df name="phalMfdf">
-            <df name="src">
-              <df name="Sw">
-                <in>phalMfdf_Sw.c</in>
-                <in>phalMfdf_Sw_Int.c</in>
+            <df name="phalMfdf">
+              <df name="src">
+                <df name="Sw">
+                  <in>phalMfdf_Sw.c</in>
+                  <in>phalMfdf_Sw_Int.c</in>
+                </df>
+                <in>phalMfdf.c</in>
+                <in>phalMfdf_Int.c</in>
               </df>
-              <in>phalMfdf.c</in>
-              <in>phalMfdf_Int.c</in>
             </df>
-          </df>
-          <df name="phalMful">
-            <df name="src">
-              <df name="Sw">
-                <in>phalMful_Sw.c</in>
+            <df name="phalMful">
+              <df name="src">
+                <df name="Sw">
+                  <in>phalMful_Sw.c</in>
+                </df>
+                <in>phalMful.c</in>
+                <in>phalMful_Int.c</in>
               </df>
-              <in>phalMful.c</in>
-              <in>phalMful_Int.c</in>
             </df>
-          </df>
-          <df name="phalT1T">
-            <df name="src">
-              <df name="Sw">
-                <in>phalT1T_Sw.c</in>
+            <df name="phalT1T">
+              <df name="src">
+                <df name="Sw">
+                  <in>phalT1T_Sw.c</in>
+                </df>
+                <in>phalT1T.c</in>
               </df>
-              <in>phalT1T.c</in>
             </df>
-          </df>
-          <df name="phalTop">
-            <df name="src">
-              <df name="Sw">
-                <in>phalTop_Sw.c</in>
-                <in>phalTop_Sw_Int_T1T.c</in>
-                <in>phalTop_Sw_Int_T2T.c</in>
-                <in>phalTop_Sw_Int_T3T.c</in>
-                <in>phalTop_Sw_Int_T4T.c</in>
+            <df name="phalTop">
+              <df name="src">
+                <df name="Sw">
+                  <in>phalTop_Sw.c</in>
+                  <in>phalTop_Sw_Int_T1T.c</in>
+                  <in>phalTop_Sw_Int_T2T.c</in>
+                  <in>phalTop_Sw_Int_T3T.c</in>
+                  <in>phalTop_Sw_Int_T4T.c</in>
+                </df>
+                <in>phalTop.c</in>
               </df>
-              <in>phalTop.c</in>
             </df>
-          </df>
-          <df name="phbalReg">
-            <df name="src">
-              <in>phBalReg_RpiSpi.c</in>
-              <in>phbalReg.c</in>
-            </df>
-          </df>
-          <df name="phCidManager">
-            <df name="src">
-              <df name="Sw">
-                <in>phCidManager_Sw.c</in>
+            <df name="phbalReg">
+              <df name="src">
+                <in>phBalReg_RpiSpi.c</in>
+                <in>phbalReg.c</in>
               </df>
-              <in>phCidManager.c</in>
             </df>
-          </df>
-          <df name="phhalHw">
-            <df name="src">
-              <df name="Callback">
-                <in>phhalHw_Callback.c</in>
+            <df name="phCidManager">
+              <df name="src">
+                <df name="Sw">
+                  <in>phCidManager_Sw.c</in>
+                </df>
+                <in>phCidManager.c</in>
               </df>
-              <df name="Rc523">
-                <in>phhalHw_Rc523.c</in>
-                <in>phhalHw_Rc523_Cmd.c</in>
-                <in>phhalHw_Rc523_Int.c</in>
-                <in>phhalHw_Rc523_Wait.c</in>
-              </df>
-              <df name="Rc663">
-                <in>phhalHw_Rc663.c</in>
-                <in>phhalHw_Rc663_Cmd.c</in>
-                <in>phhalHw_Rc663_Int.c</in>
-                <in>phhalHw_Rc663_Wait.c</in>
-              </df>
-              <in>phhalHw.c</in>
             </df>
-          </df>
-          <df name="phKeyStore">
-            <df name="src">
-              <df name="Rc663">
-                <in>phKeyStore_Rc663.c</in>
+            <df name="phhalHw">
+              <df name="src">
+                <df name="Callback">
+                  <in>phhalHw_Callback.c</in>
+                </df>
+                <df name="Rc523">
+                  <in>phhalHw_Rc523.c</in>
+                  <in>phhalHw_Rc523_Cmd.c</in>
+                  <in>phhalHw_Rc523_Int.c</in>
+                  <in>phhalHw_Rc523_Wait.c</in>
+                </df>
+                <df name="Rc663">
+                  <in>phhalHw_Rc663.c</in>
+                  <in>phhalHw_Rc663_Cmd.c</in>
+                  <in>phhalHw_Rc663_Int.c</in>
+                  <in>phhalHw_Rc663_Wait.c</in>
+                </df>
+                <in>phhalHw.c</in>
               </df>
-              <df name="Sw">
-                <in>phKeyStore_Sw.c</in>
+            </df>
+            <df name="phKeyStore">
+              <df name="src">
+                <df name="Rc663">
+                  <in>phKeyStore_Rc663.c</in>
+                </df>
+                <df name="Sw">
+                  <in>phKeyStore_Sw.c</in>
+                </df>
+                <in>phKeyStore.c</in>
               </df>
-              <in>phKeyStore.c</in>
             </df>
-          </df>
-          <df name="phlnLlcp">
-            <df name="src">
-              <df name="Fri">
-                <in>phlnLlcp_Fri_Llcp.c</in>
-                <in>phlnLlcp_Fri_Mac.c</in>
-                <in>phlnLlcp_Fri_MacNfcip.c</in>
-                <in>phlnLlcp_Fri_OvrHal.c</in>
-                <in>phlnLlcp_Fri_Transport.c</in>
-                <in>phlnLlcp_Fri_Transport_Connection.c</in>
-                <in>phlnLlcp_Fri_Transport_Connectionless.c</in>
-                <in>phlnLlcp_Fri_Utils.c</in>
+            <df name="phlnLlcp">
+              <df name="src">
+                <df name="Fri">
+                  <in>phlnLlcp_Fri_Llcp.c</in>
+                  <in>phlnLlcp_Fri_Mac.c</in>
+                  <in>phlnLlcp_Fri_MacNfcip.c</in>
+                  <in>phlnLlcp_Fri_OvrHal.c</in>
+                  <in>phlnLlcp_Fri_Transport.c</in>
+                  <in>phlnLlcp_Fri_Transport_Connection.c</in>
+                  <in>phlnLlcp_Fri_Transport_Connectionless.c</in>
+                  <in>phlnLlcp_Fri_Utils.c</in>
+                </df>
+                <in>phlnLlcp.c</in>
               </df>
-              <in>phlnLlcp.c</in>
             </df>
-          </df>
-          <df name="phLog">
-            <df name="src">
-              <in>phLog.c</in>
-            </df>
-          </df>
-          <df name="phnpSnep">
-            <df name="src">
-              <df name="Fri">
-                <in>phnpSnep_Fri.c</in>
-                <in>phnpSnep_Fri_ContextMgmt.c</in>
-                <in>phnpSnep_Fri_Utils.c</in>
+            <df name="phLog">
+              <df name="src">
+                <in>phLog.c</in>
               </df>
-              <in>phnpSnep.c</in>
             </df>
-          </df>
-          <df name="phOsal">
-            <df name="src">
-              <in>phOsal.c</in>
-              <in>phOsal_GLib.c</in>
-            </df>
-          </df>
-          <df name="phpalFelica">
-            <df name="src">
-              <df name="Sw">
-                <in>phpalFelica_Sw.c</in>
+            <df name="phnpSnep">
+              <df name="src">
+                <df name="Fri">
+                  <in>phnpSnep_Fri.c</in>
+                  <in>phnpSnep_Fri_ContextMgmt.c</in>
+                  <in>phnpSnep_Fri_Utils.c</in>
+                </df>
+                <in>phnpSnep.c</in>
               </df>
-              <in>phpalFelica.c</in>
             </df>
-          </df>
-          <df name="phpalI14443p3a">
-            <df name="src">
-              <df name="Sw">
-                <in>phpalI14443p3a_Sw.c</in>
+            <df name="phOsal">
+              <df name="src">
+                <in>phOsal.c</in>
+                <in>phOsal_GLib.c</in>
               </df>
-              <in>phpalI14443p3a.c</in>
             </df>
-          </df>
-          <df name="phpalI14443p3b">
-            <df name="src">
-              <df name="Sw">
-                <in>phpalI14443p3b_Sw.c</in>
+            <df name="phpalFelica">
+              <df name="src">
+                <df name="Sw">
+                  <in>phpalFelica_Sw.c</in>
+                </df>
+                <in>phpalFelica.c</in>
               </df>
-              <in>phpalI14443p3b.c</in>
             </df>
-          </df>
-          <df name="phpalI14443p4">
-            <df name="src">
-              <df name="Sw">
-                <in>phpalI14443p4_Sw.c</in>
+            <df name="phpalI14443p3a">
+              <df name="src">
+                <df name="Sw">
+                  <in>phpalI14443p3a_Sw.c</in>
+                </df>
+                <in>phpalI14443p3a.c</in>
               </df>
-              <in>phpalI14443p4.c</in>
             </df>
-          </df>
-          <df name="phpalI14443p4a">
-            <df name="src">
-              <df name="Sw">
-                <in>phpalI14443p4a_Sw.c</in>
+            <df name="phpalI14443p3b">
+              <df name="src">
+                <df name="Sw">
+                  <in>phpalI14443p3b_Sw.c</in>
+                </df>
+                <in>phpalI14443p3b.c</in>
               </df>
-              <in>phpalI14443p4a.c</in>
             </df>
-          </df>
-          <df name="phpalI18092mPI">
-            <df name="src">
-              <df name="Sw">
-                <in>phpalI18092mPI_Sw.c</in>
-                <in>phpalI18092mPI_Sw_Int.c</in>
+            <df name="phpalI14443p4">
+              <df name="src">
+                <df name="Sw">
+                  <in>phpalI14443p4_Sw.c</in>
+                </df>
+                <in>phpalI14443p4.c</in>
               </df>
-              <in>phpalI18092mPI.c</in>
             </df>
-          </df>
-          <df name="phpalI18092mT">
-            <df name="src">
-              <df name="Sw">
-                <in>phpalI18092mT_Sw.c</in>
-                <in>phpalI18092mT_Sw_Int.c</in>
+            <df name="phpalI14443p4a">
+              <df name="src">
+                <df name="Sw">
+                  <in>phpalI14443p4a_Sw.c</in>
+                </df>
+                <in>phpalI14443p4a.c</in>
               </df>
-              <in>phpalI18092mT.c</in>
             </df>
-          </df>
-          <df name="phpalMifare">
-            <df name="src">
-              <df name="Sw">
-                <in>phpalMifare_Sw.c</in>
+            <df name="phpalI18092mPI">
+              <df name="src">
+                <df name="Sw">
+                  <in>phpalI18092mPI_Sw.c</in>
+                  <in>phpalI18092mPI_Sw_Int.c</in>
+                </df>
+                <in>phpalI18092mPI.c</in>
               </df>
-              <in>phpalMifare.c</in>
             </df>
-          </df>
-          <df name="phTools">
-            <df name="src">
-              <in>phTools.c</in>
+            <df name="phpalI18092mT">
+              <df name="src">
+                <df name="Sw">
+                  <in>phpalI18092mT_Sw.c</in>
+                  <in>phpalI18092mT_Sw_Int.c</in>
+                </df>
+                <in>phpalI18092mT.c</in>
+              </df>
+            </df>
+            <df name="phpalMifare">
+              <df name="src">
+                <df name="Sw">
+                  <in>phpalMifare_Sw.c</in>
+                </df>
+                <in>phpalMifare.c</in>
+              </df>
+            </df>
+            <df name="phTools">
+              <df name="src">
+                <in>phTools.c</in>
+              </df>
             </df>
           </df>
         </df>
@@ -306,528 +308,534 @@
         <ccTool flags="1">
         </ccTool>
       </item>
+      <item path="lib/nxprdlib/comps/phCidManager/src/Sw/phCidManager_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phCidManager/src/phCidManager.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phKeyStore/src/Rc663/phKeyStore_Rc663.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phKeyStore/src/Sw/phKeyStore_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phKeyStore/src/phKeyStore.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phLog/src/phLog.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phOsal/src/phOsal.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phOsal/src/phOsal_GLib.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phTools/src/phTools.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phacDiscLoop/src/Sw/phacDiscLoop_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phacDiscLoop/src/Sw/phacDiscLoop_Sw_Int.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phacDiscLoop/src/phacDiscLoop.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalFelica/src/Sw/phalFelica_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalFelica/src/phalFelica.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalMfc/src/Sw/phalMfc_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalMfc/src/phalMfc.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalMfc/src/phalMfc_Int.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalMfdf/src/Sw/phalMfdf_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalMfdf/src/Sw/phalMfdf_Sw_Int.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalMfdf/src/phalMfdf.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalMfdf/src/phalMfdf_Int.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalMful/src/Sw/phalMful_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalMful/src/phalMful.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalMful/src/phalMful_Int.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalT1T/src/Sw/phalT1T_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalT1T/src/phalT1T.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalTop/src/Sw/phalTop_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalTop/src/Sw/phalTop_Sw_Int_T1T.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalTop/src/Sw/phalTop_Sw_Int_T2T.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalTop/src/Sw/phalTop_Sw_Int_T3T.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalTop/src/Sw/phalTop_Sw_Int_T4T.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phalTop/src/phalTop.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phbalReg/src/phBalReg_RpiSpi.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phbalReg/src/phbalReg.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phhalHw/src/Callback/phhalHw_Callback.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phhalHw/src/Rc523/phhalHw_Rc523.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phhalHw/src/Rc523/phhalHw_Rc523_Cmd.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phhalHw/src/Rc523/phhalHw_Rc523_Int.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phhalHw/src/Rc523/phhalHw_Rc523_Wait.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phhalHw/src/Rc663/phhalHw_Rc663.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phhalHw/src/Rc663/phhalHw_Rc663_Cmd.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phhalHw/src/Rc663/phhalHw_Rc663_Int.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phhalHw/src/Rc663/phhalHw_Rc663_Wait.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phhalHw/src/phhalHw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Llcp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Mac.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_MacNfcip.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_OvrHal.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Transport.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Transport_Connection.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Transport_Connectionless.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Utils.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phlnLlcp/src/phlnLlcp.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_ContextMgmt.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phnpSnep/src/phnpSnep.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalFelica/src/Sw/phpalFelica_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalFelica/src/phpalFelica.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalI14443p3a/src/Sw/phpalI14443p3a_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalI14443p3a/src/phpalI14443p3a.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalI14443p3b/src/Sw/phpalI14443p3b_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalI14443p3b/src/phpalI14443p3b.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalI14443p4/src/Sw/phpalI14443p4_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalI14443p4/src/phpalI14443p4.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalI14443p4a/src/Sw/phpalI14443p4a_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalI14443p4a/src/phpalI14443p4a.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalI18092mPI/src/Sw/phpalI18092mPI_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalI18092mPI/src/Sw/phpalI18092mPI_Sw_Int.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalI18092mPI/src/phpalI18092mPI.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalI18092mT/src/Sw/phpalI18092mT_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalI18092mT/src/Sw/phpalI18092mT_Sw_Int.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalI18092mT/src/phpalI18092mT.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalMifare/src/Sw/phpalMifare_Sw.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
+      <item path="lib/nxprdlib/comps/phpalMifare/src/phpalMifare.c"
+            ex="false"
+            tool="0"
+            flavor2="2">
+        <cTool flags="0">
+        </cTool>
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="1">
         </ccTool>
-      </item>
-      <item path="nxprdlib/comps/phCidManager/src/Sw/phCidManager_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phCidManager/src/phCidManager.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phKeyStore/src/Rc663/phKeyStore_Rc663.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phKeyStore/src/Sw/phKeyStore_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phKeyStore/src/phKeyStore.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phLog/src/phLog.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phOsal/src/phOsal.c" ex="false" tool="0" flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phOsal/src/phOsal_GLib.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phTools/src/phTools.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phacDiscLoop/src/Sw/phacDiscLoop_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phacDiscLoop/src/Sw/phacDiscLoop_Sw_Int.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phacDiscLoop/src/phacDiscLoop.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalFelica/src/Sw/phalFelica_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalFelica/src/phalFelica.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalMfc/src/Sw/phalMfc_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalMfc/src/phalMfc.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalMfc/src/phalMfc_Int.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalMfdf/src/Sw/phalMfdf_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalMfdf/src/Sw/phalMfdf_Sw_Int.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalMfdf/src/phalMfdf.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalMfdf/src/phalMfdf_Int.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalMful/src/Sw/phalMful_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalMful/src/phalMful.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalMful/src/phalMful_Int.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalT1T/src/Sw/phalT1T_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalT1T/src/phalT1T.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalTop/src/Sw/phalTop_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalTop/src/Sw/phalTop_Sw_Int_T1T.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalTop/src/Sw/phalTop_Sw_Int_T2T.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalTop/src/Sw/phalTop_Sw_Int_T3T.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalTop/src/Sw/phalTop_Sw_Int_T4T.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phalTop/src/phalTop.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phbalReg/src/phBalReg_RpiSpi.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phbalReg/src/phbalReg.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phhalHw/src/Callback/phhalHw_Callback.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phhalHw/src/Rc523/phhalHw_Rc523.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phhalHw/src/Rc523/phhalHw_Rc523_Cmd.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phhalHw/src/Rc523/phhalHw_Rc523_Int.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phhalHw/src/Rc523/phhalHw_Rc523_Wait.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phhalHw/src/Rc663/phhalHw_Rc663.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phhalHw/src/Rc663/phhalHw_Rc663_Cmd.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phhalHw/src/Rc663/phhalHw_Rc663_Int.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phhalHw/src/Rc663/phhalHw_Rc663_Wait.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phhalHw/src/phhalHw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Llcp.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Mac.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_MacNfcip.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_OvrHal.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Transport.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Transport_Connection.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Transport_Connectionless.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phlnLlcp/src/Fri/phlnLlcp_Fri_Utils.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phlnLlcp/src/phlnLlcp.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_ContextMgmt.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phnpSnep/src/Fri/phnpSnep_Fri_Utils.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phnpSnep/src/phnpSnep.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalFelica/src/Sw/phpalFelica_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalFelica/src/phpalFelica.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalI14443p3a/src/Sw/phpalI14443p3a_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalI14443p3a/src/phpalI14443p3a.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalI14443p3b/src/Sw/phpalI14443p3b_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalI14443p3b/src/phpalI14443p3b.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalI14443p4/src/Sw/phpalI14443p4_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalI14443p4/src/phpalI14443p4.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalI14443p4a/src/Sw/phpalI14443p4a_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalI14443p4a/src/phpalI14443p4a.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalI18092mPI/src/Sw/phpalI18092mPI_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalI18092mPI/src/Sw/phpalI18092mPI_Sw_Int.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalI18092mPI/src/phpalI18092mPI.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalI18092mT/src/Sw/phpalI18092mT_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalI18092mT/src/Sw/phpalI18092mT_Sw_Int.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalI18092mT/src/phpalI18092mT.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalMifare/src/Sw/phpalMifare_Sw.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
-      </item>
-      <item path="nxprdlib/comps/phpalMifare/src/phpalMifare.c"
-            ex="false"
-            tool="0"
-            flavor2="2">
-        <cTool flags="0">
-        </cTool>
       </item>
       <item path="protocol.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="1">
