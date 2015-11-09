@@ -50,7 +50,7 @@ bool validCommand(const Command command) {
             }
             break;
         case CMD_EMPTY.first:
-            if(command.last >= 0 && command.last <= 32) {
+            if(command.last >= 0 && command.last <= 64) {
                 valid = true;
             }
             break;

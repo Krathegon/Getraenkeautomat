@@ -13,6 +13,156 @@
             <in>CMakeCXXCompilerId.cpp</in>
           </df>
           <df name="Getraenkeautomat.dir">
+            <df name="lib">
+              <df name="nxprdlib">
+                <df name="comps">
+                  <df name="phacDiscLoop">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phalFelica">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phalMfc">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phalMfdf">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phalMful">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phalT1T">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phalTop">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phbalReg">
+                    <df name="src">
+                    </df>
+                  </df>
+                  <df name="phCidManager">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phhalHw">
+                    <df name="src">
+                      <df name="Callback">
+                      </df>
+                      <df name="Rc523">
+                      </df>
+                      <df name="Rc663">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phKeyStore">
+                    <df name="src">
+                      <df name="Rc663">
+                      </df>
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phlnLlcp">
+                    <df name="src">
+                      <df name="Fri">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phLog">
+                    <df name="src">
+                    </df>
+                  </df>
+                  <df name="phnpSnep">
+                    <df name="src">
+                      <df name="Fri">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phOsal">
+                    <df name="src">
+                    </df>
+                  </df>
+                  <df name="phpalFelica">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phpalI14443p3a">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phpalI14443p3b">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phpalI14443p4">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phpalI14443p4a">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phpalI18092mPI">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phpalI18092mT">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phpalMifare">
+                    <df name="src">
+                      <df name="Sw">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="phTools">
+                    <df name="src">
+                    </df>
+                  </df>
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="Progress">
           </df>
         </df>
         <df name="lib">
@@ -36,6 +186,979 @@
       </df>
       <df name="lib">
         <df name="cpr">
+          <df name="cpr">
+            <in>auth.cpp</in>
+            <in>cookies.cpp</in>
+            <in>cprtypes.cpp</in>
+            <in>digest.cpp</in>
+            <in>multipart.cpp</in>
+            <in>parameters.cpp</in>
+            <in>payload.cpp</in>
+            <in>proxies.cpp</in>
+            <in>session.cpp</in>
+            <in>util.cpp</in>
+          </df>
+          <df name="include">
+            <in>api.h</in>
+            <in>auth.h</in>
+            <in>body.h</in>
+            <in>cookies.h</in>
+            <in>cpr.h</in>
+            <in>cprtypes.h</in>
+            <in>curlholder.h</in>
+            <in>defines.h</in>
+            <in>digest.h</in>
+            <in>multipart.h</in>
+            <in>parameters.h</in>
+            <in>payload.h</in>
+            <in>proxies.h</in>
+            <in>response.h</in>
+            <in>session.h</in>
+            <in>timeout.h</in>
+            <in>util.h</in>
+          </df>
+          <df name="opt">
+            <df name="curl">
+              <df name="CMake">
+                <df name="Platforms">
+                </df>
+                <in>CurlTests.c</in>
+              </df>
+              <df name="docs">
+                <df name="examples">
+                  <in>10-at-a-time.c</in>
+                  <in>anyauthput.c</in>
+                  <in>asiohiper.cpp</in>
+                  <in>cacertinmem.c</in>
+                  <in>certinfo.c</in>
+                  <in>chkspeed.c</in>
+                  <in>cookie_interface.c</in>
+                  <in>curlgtk.c</in>
+                  <in>curlx.c</in>
+                  <in>debug.c</in>
+                  <in>evhiperfifo.c</in>
+                  <in>externalsocket.c</in>
+                  <in>fileupload.c</in>
+                  <in>fopen.c</in>
+                  <in>ftp-wildcard.c</in>
+                  <in>ftpget.c</in>
+                  <in>ftpgetinfo.c</in>
+                  <in>ftpgetresp.c</in>
+                  <in>ftpsget.c</in>
+                  <in>ftpupload.c</in>
+                  <in>ftpuploadresume.c</in>
+                  <in>getinfo.c</in>
+                  <in>getinmemory.c</in>
+                  <in>ghiper.c</in>
+                  <in>hiperfifo.c</in>
+                  <in>href_extractor.c</in>
+                  <in>htmltidy.c</in>
+                  <in>htmltitle.cpp</in>
+                  <in>http-post.c</in>
+                  <in>httpcustomheader.c</in>
+                  <in>httpput.c</in>
+                  <in>https.c</in>
+                  <in>imap-append.c</in>
+                  <in>imap-copy.c</in>
+                  <in>imap-create.c</in>
+                  <in>imap-delete.c</in>
+                  <in>imap-examine.c</in>
+                  <in>imap-fetch.c</in>
+                  <in>imap-list.c</in>
+                  <in>imap-lsub.c</in>
+                  <in>imap-multi.c</in>
+                  <in>imap-noop.c</in>
+                  <in>imap-search.c</in>
+                  <in>imap-ssl.c</in>
+                  <in>imap-store.c</in>
+                  <in>imap-tls.c</in>
+                  <in>multi-app.c</in>
+                  <in>multi-debugcallback.c</in>
+                  <in>multi-double.c</in>
+                  <in>multi-post.c</in>
+                  <in>multi-single.c</in>
+                  <in>multi-uv.c</in>
+                  <in>multithread.c</in>
+                  <in>opensslthreadlock.c</in>
+                  <in>persistant.c</in>
+                  <in>pop3-dele.c</in>
+                  <in>pop3-list.c</in>
+                  <in>pop3-multi.c</in>
+                  <in>pop3-noop.c</in>
+                  <in>pop3-retr.c</in>
+                  <in>pop3-ssl.c</in>
+                  <in>pop3-stat.c</in>
+                  <in>pop3-tls.c</in>
+                  <in>pop3-top.c</in>
+                  <in>pop3-uidl.c</in>
+                  <in>post-callback.c</in>
+                  <in>postinmemory.c</in>
+                  <in>postit2.c</in>
+                  <in>progressfunc.c</in>
+                  <in>resolve.c</in>
+                  <in>rtsp.c</in>
+                  <in>sampleconv.c</in>
+                  <in>sendrecv.c</in>
+                  <in>sepheaders.c</in>
+                  <in>sessioninfo.c</in>
+                  <in>sftpget.c</in>
+                  <in>simple.c</in>
+                  <in>simplepost.c</in>
+                  <in>simplessl.c</in>
+                  <in>smooth-gtk-thread.c</in>
+                  <in>smtp-expn.c</in>
+                  <in>smtp-mail.c</in>
+                  <in>smtp-multi.c</in>
+                  <in>smtp-ssl.c</in>
+                  <in>smtp-tls.c</in>
+                  <in>smtp-vrfy.c</in>
+                  <in>synctime.c</in>
+                  <in>threaded-ssl.c</in>
+                  <in>url2file.c</in>
+                  <in>usercertinmem.c</in>
+                  <in>xmlstream.c</in>
+                </df>
+                <df name="libcurl">
+                  <df name="opts">
+                  </df>
+                </df>
+              </df>
+              <df name="include">
+                <df name="curl">
+                  <in>curl.h</in>
+                  <in>curlrules.h</in>
+                  <in>curlver.h</in>
+                  <in>easy.h</in>
+                  <in>mprintf.h</in>
+                  <in>multi.h</in>
+                  <in>stdcheaders.h</in>
+                  <in>typecheck-gcc.h</in>
+                </df>
+              </df>
+              <df name="lib">
+                <df name="vtls">
+                  <in>axtls.c</in>
+                  <in>axtls.h</in>
+                  <in>cyassl.c</in>
+                  <in>cyassl.h</in>
+                  <in>darwinssl.c</in>
+                  <in>darwinssl.h</in>
+                  <in>gskit.c</in>
+                  <in>gskit.h</in>
+                  <in>gtls.c</in>
+                  <in>gtls.h</in>
+                  <in>nss.c</in>
+                  <in>nssg.h</in>
+                  <in>openssl.c</in>
+                  <in>openssl.h</in>
+                  <in>polarssl.c</in>
+                  <in>polarssl.h</in>
+                  <in>polarssl_threadlock.c</in>
+                  <in>polarssl_threadlock.h</in>
+                  <in>schannel.c</in>
+                  <in>schannel.h</in>
+                  <in>vtls.c</in>
+                  <in>vtls.h</in>
+                </df>
+                <in>amigaos.c</in>
+                <in>amigaos.h</in>
+                <in>arpa_telnet.h</in>
+                <in>asyn-ares.c</in>
+                <in>asyn-thread.c</in>
+                <in>asyn.h</in>
+                <in>base64.c</in>
+                <in>bundles.c</in>
+                <in>bundles.h</in>
+                <in>config-amigaos.h</in>
+                <in>config-dos.h</in>
+                <in>config-mac.h</in>
+                <in>config-os400.h</in>
+                <in>config-riscos.h</in>
+                <in>config-symbian.h</in>
+                <in>config-tpf.h</in>
+                <in>config-vxworks.h</in>
+                <in>config-win32.h</in>
+                <in>config-win32ce.h</in>
+                <in>conncache.c</in>
+                <in>conncache.h</in>
+                <in>connect.c</in>
+                <in>connect.h</in>
+                <in>content_encoding.c</in>
+                <in>content_encoding.h</in>
+                <in>cookie.c</in>
+                <in>cookie.h</in>
+                <in>curl_addrinfo.c</in>
+                <in>curl_addrinfo.h</in>
+                <in>curl_base64.h</in>
+                <in>curl_des.c</in>
+                <in>curl_des.h</in>
+                <in>curl_endian.c</in>
+                <in>curl_endian.h</in>
+                <in>curl_fnmatch.c</in>
+                <in>curl_fnmatch.h</in>
+                <in>curl_gethostname.c</in>
+                <in>curl_gethostname.h</in>
+                <in>curl_gssapi.c</in>
+                <in>curl_gssapi.h</in>
+                <in>curl_hmac.h</in>
+                <in>curl_ldap.h</in>
+                <in>curl_md4.h</in>
+                <in>curl_md5.h</in>
+                <in>curl_memory.h</in>
+                <in>curl_memrchr.c</in>
+                <in>curl_memrchr.h</in>
+                <in>curl_multibyte.c</in>
+                <in>curl_multibyte.h</in>
+                <in>curl_ntlm.c</in>
+                <in>curl_ntlm.h</in>
+                <in>curl_ntlm_core.c</in>
+                <in>curl_ntlm_core.h</in>
+                <in>curl_ntlm_msgs.c</in>
+                <in>curl_ntlm_msgs.h</in>
+                <in>curl_ntlm_wb.c</in>
+                <in>curl_ntlm_wb.h</in>
+                <in>curl_printf.h</in>
+                <in>curl_rtmp.c</in>
+                <in>curl_rtmp.h</in>
+                <in>curl_sasl.c</in>
+                <in>curl_sasl.h</in>
+                <in>curl_sasl_gssapi.c</in>
+                <in>curl_sasl_sspi.c</in>
+                <in>curl_sec.h</in>
+                <in>curl_setup.h</in>
+                <in>curl_setup_once.h</in>
+                <in>curl_sspi.c</in>
+                <in>curl_sspi.h</in>
+                <in>curl_threads.c</in>
+                <in>curl_threads.h</in>
+                <in>curlx.h</in>
+                <in>dict.c</in>
+                <in>dict.h</in>
+                <in>dotdot.c</in>
+                <in>dotdot.h</in>
+                <in>easy.c</in>
+                <in>easyif.h</in>
+                <in>escape.c</in>
+                <in>escape.h</in>
+                <in>file.c</in>
+                <in>file.h</in>
+                <in>fileinfo.c</in>
+                <in>fileinfo.h</in>
+                <in>formdata.c</in>
+                <in>formdata.h</in>
+                <in>ftp.c</in>
+                <in>ftp.h</in>
+                <in>ftplistparser.c</in>
+                <in>ftplistparser.h</in>
+                <in>getenv.c</in>
+                <in>getinfo.c</in>
+                <in>getinfo.h</in>
+                <in>gopher.c</in>
+                <in>gopher.h</in>
+                <in>hash.c</in>
+                <in>hash.h</in>
+                <in>hmac.c</in>
+                <in>hostasyn.c</in>
+                <in>hostcheck.c</in>
+                <in>hostcheck.h</in>
+                <in>hostip.c</in>
+                <in>hostip.h</in>
+                <in>hostip4.c</in>
+                <in>hostip6.c</in>
+                <in>hostsyn.c</in>
+                <in>http.c</in>
+                <in>http.h</in>
+                <in>http2.c</in>
+                <in>http2.h</in>
+                <in>http_chunks.c</in>
+                <in>http_chunks.h</in>
+                <in>http_digest.c</in>
+                <in>http_digest.h</in>
+                <in>http_negotiate.c</in>
+                <in>http_negotiate.h</in>
+                <in>http_negotiate_sspi.c</in>
+                <in>http_proxy.c</in>
+                <in>http_proxy.h</in>
+                <in>idn_win32.c</in>
+                <in>if2ip.c</in>
+                <in>if2ip.h</in>
+                <in>imap.c</in>
+                <in>imap.h</in>
+                <in>inet_ntop.c</in>
+                <in>inet_ntop.h</in>
+                <in>inet_pton.c</in>
+                <in>inet_pton.h</in>
+                <in>krb5.c</in>
+                <in>ldap.c</in>
+                <in>llist.c</in>
+                <in>llist.h</in>
+                <in>md4.c</in>
+                <in>md5.c</in>
+                <in>memdebug.c</in>
+                <in>memdebug.h</in>
+                <in>mprintf.c</in>
+                <in>multi.c</in>
+                <in>multihandle.h</in>
+                <in>multiif.h</in>
+                <in>netrc.c</in>
+                <in>netrc.h</in>
+                <in>non-ascii.c</in>
+                <in>non-ascii.h</in>
+                <in>nonblock.c</in>
+                <in>nonblock.h</in>
+                <in>nwlib.c</in>
+                <in>nwos.c</in>
+                <in>openldap.c</in>
+                <in>parsedate.c</in>
+                <in>parsedate.h</in>
+                <in>pingpong.c</in>
+                <in>pingpong.h</in>
+                <in>pipeline.c</in>
+                <in>pipeline.h</in>
+                <in>pop3.c</in>
+                <in>pop3.h</in>
+                <in>progress.c</in>
+                <in>progress.h</in>
+                <in>rawstr.c</in>
+                <in>rawstr.h</in>
+                <in>rtsp.c</in>
+                <in>rtsp.h</in>
+                <in>security.c</in>
+                <in>select.c</in>
+                <in>select.h</in>
+                <in>sendf.c</in>
+                <in>sendf.h</in>
+                <in>setup-os400.h</in>
+                <in>setup-vms.h</in>
+                <in>share.c</in>
+                <in>share.h</in>
+                <in>sigpipe.h</in>
+                <in>slist.c</in>
+                <in>slist.h</in>
+                <in>smb.c</in>
+                <in>smb.h</in>
+                <in>smtp.c</in>
+                <in>smtp.h</in>
+                <in>sockaddr.h</in>
+                <in>socks.c</in>
+                <in>socks.h</in>
+                <in>socks_gssapi.c</in>
+                <in>socks_sspi.c</in>
+                <in>speedcheck.c</in>
+                <in>speedcheck.h</in>
+                <in>splay.c</in>
+                <in>splay.h</in>
+                <in>ssh.c</in>
+                <in>ssh.h</in>
+                <in>strdup.c</in>
+                <in>strdup.h</in>
+                <in>strequal.c</in>
+                <in>strequal.h</in>
+                <in>strerror.c</in>
+                <in>strerror.h</in>
+                <in>strtok.c</in>
+                <in>strtok.h</in>
+                <in>strtoofft.c</in>
+                <in>strtoofft.h</in>
+                <in>telnet.c</in>
+                <in>telnet.h</in>
+                <in>tftp.c</in>
+                <in>tftp.h</in>
+                <in>timeval.c</in>
+                <in>timeval.h</in>
+                <in>transfer.c</in>
+                <in>transfer.h</in>
+                <in>url.c</in>
+                <in>url.h</in>
+                <in>urldata.h</in>
+                <in>version.c</in>
+                <in>warnless.c</in>
+                <in>warnless.h</in>
+                <in>wildcard.c</in>
+                <in>wildcard.h</in>
+                <in>x509asn1.c</in>
+                <in>x509asn1.h</in>
+              </df>
+              <df name="m4">
+              </df>
+              <df name="packages">
+                <df name="AIX">
+                  <df name="RPM">
+                  </df>
+                </df>
+                <df name="Android">
+                </df>
+                <df name="DOS">
+                </df>
+                <df name="EPM">
+                </df>
+                <df name="Linux">
+                  <df name="RPM">
+                  </df>
+                </df>
+                <df name="NetWare">
+                </df>
+                <df name="OS400">
+                  <in>ccsidcurl.c</in>
+                  <in>ccsidcurl.h</in>
+                  <in>os400sys.c</in>
+                  <in>os400sys.h</in>
+                </df>
+                <df name="Solaris">
+                </df>
+                <df name="Symbian">
+                  <df name="bwins">
+                  </df>
+                  <df name="eabi">
+                  </df>
+                  <df name="group">
+                  </df>
+                </df>
+                <df name="TPF">
+                </df>
+                <df name="vms">
+                  <in>curl_crtl_init.c</in>
+                  <in>curlmsg.h</in>
+                  <in>curlmsg_vms.h</in>
+                  <in>report_openssl_version.c</in>
+                  <in>vms_eco_level.h</in>
+                </df>
+                <df name="Win32">
+                  <df name="cygwin">
+                  </df>
+                </df>
+              </df>
+              <df name="perl">
+                <df name="contrib">
+                </df>
+              </df>
+              <df name="projects">
+                <df name="Windows">
+                  <df name="VC10">
+                    <df name="lib">
+                    </df>
+                    <df name="src">
+                    </df>
+                  </df>
+                  <df name="VC11">
+                    <df name="lib">
+                    </df>
+                    <df name="src">
+                    </df>
+                  </df>
+                  <df name="VC12">
+                    <df name="lib">
+                    </df>
+                    <df name="src">
+                    </df>
+                  </df>
+                  <df name="VC6">
+                    <df name="lib">
+                    </df>
+                    <df name="src">
+                    </df>
+                  </df>
+                  <df name="VC7">
+                    <df name="lib">
+                    </df>
+                    <df name="src">
+                    </df>
+                  </df>
+                  <df name="VC7.1">
+                    <df name="lib">
+                    </df>
+                    <df name="src">
+                    </df>
+                  </df>
+                  <df name="VC8">
+                    <df name="lib">
+                    </df>
+                    <df name="src">
+                    </df>
+                  </df>
+                  <df name="VC9">
+                    <df name="lib">
+                    </df>
+                    <df name="src">
+                    </df>
+                  </df>
+                </df>
+              </df>
+              <df name="src">
+                <df name="macos">
+                  <df name="src">
+                    <in>curl_GUSIConfig.cpp</in>
+                    <in>macos_main.cpp</in>
+                  </df>
+                </df>
+                <in>tool_binmode.c</in>
+                <in>tool_binmode.h</in>
+                <in>tool_bname.c</in>
+                <in>tool_bname.h</in>
+                <in>tool_cb_dbg.c</in>
+                <in>tool_cb_dbg.h</in>
+                <in>tool_cb_hdr.c</in>
+                <in>tool_cb_hdr.h</in>
+                <in>tool_cb_prg.c</in>
+                <in>tool_cb_prg.h</in>
+                <in>tool_cb_rea.c</in>
+                <in>tool_cb_rea.h</in>
+                <in>tool_cb_see.c</in>
+                <in>tool_cb_see.h</in>
+                <in>tool_cb_wrt.c</in>
+                <in>tool_cb_wrt.h</in>
+                <in>tool_cfgable.c</in>
+                <in>tool_cfgable.h</in>
+                <in>tool_convert.c</in>
+                <in>tool_convert.h</in>
+                <in>tool_dirhie.c</in>
+                <in>tool_dirhie.h</in>
+                <in>tool_doswin.c</in>
+                <in>tool_doswin.h</in>
+                <in>tool_easysrc.c</in>
+                <in>tool_easysrc.h</in>
+                <in>tool_formparse.c</in>
+                <in>tool_formparse.h</in>
+                <in>tool_getparam.c</in>
+                <in>tool_getparam.h</in>
+                <in>tool_getpass.c</in>
+                <in>tool_getpass.h</in>
+                <in>tool_help.c</in>
+                <in>tool_help.h</in>
+                <in>tool_helpers.c</in>
+                <in>tool_helpers.h</in>
+                <in>tool_homedir.c</in>
+                <in>tool_homedir.h</in>
+                <in>tool_hugehelp.h</in>
+                <in>tool_libinfo.c</in>
+                <in>tool_libinfo.h</in>
+                <in>tool_main.c</in>
+                <in>tool_main.h</in>
+                <in>tool_metalink.c</in>
+                <in>tool_metalink.h</in>
+                <in>tool_mfiles.c</in>
+                <in>tool_mfiles.h</in>
+                <in>tool_msgs.c</in>
+                <in>tool_msgs.h</in>
+                <in>tool_operate.c</in>
+                <in>tool_operate.h</in>
+                <in>tool_operhlp.c</in>
+                <in>tool_operhlp.h</in>
+                <in>tool_panykey.c</in>
+                <in>tool_panykey.h</in>
+                <in>tool_paramhlp.c</in>
+                <in>tool_paramhlp.h</in>
+                <in>tool_parsecfg.c</in>
+                <in>tool_parsecfg.h</in>
+                <in>tool_sdecls.h</in>
+                <in>tool_setopt.c</in>
+                <in>tool_setopt.h</in>
+                <in>tool_setup.h</in>
+                <in>tool_sleep.c</in>
+                <in>tool_sleep.h</in>
+                <in>tool_strdup.c</in>
+                <in>tool_strdup.h</in>
+                <in>tool_urlglob.c</in>
+                <in>tool_urlglob.h</in>
+                <in>tool_util.c</in>
+                <in>tool_util.h</in>
+                <in>tool_version.h</in>
+                <in>tool_vms.c</in>
+                <in>tool_vms.h</in>
+                <in>tool_writeenv.c</in>
+                <in>tool_writeenv.h</in>
+                <in>tool_writeout.c</in>
+                <in>tool_writeout.h</in>
+                <in>tool_xattr.c</in>
+                <in>tool_xattr.h</in>
+              </df>
+              <df name="tests">
+                <df name="certs">
+                  <df name="scripts">
+                  </df>
+                </df>
+                <df name="data">
+                </df>
+                <df name="libtest">
+                  <in>chkhostname.c</in>
+                  <in>first.c</in>
+                  <in>lib1500.c</in>
+                  <in>lib1501.c</in>
+                  <in>lib1502.c</in>
+                  <in>lib1506.c</in>
+                  <in>lib1507.c</in>
+                  <in>lib1508.c</in>
+                  <in>lib1509.c</in>
+                  <in>lib1510.c</in>
+                  <in>lib1511.c</in>
+                  <in>lib1512.c</in>
+                  <in>lib1513.c</in>
+                  <in>lib1514.c</in>
+                  <in>lib1515.c</in>
+                  <in>lib1520.c</in>
+                  <in>lib1525.c</in>
+                  <in>lib1526.c</in>
+                  <in>lib1527.c</in>
+                  <in>lib1528.c</in>
+                  <in>lib1529.c</in>
+                  <in>lib1900.c</in>
+                  <in>lib500.c</in>
+                  <in>lib501.c</in>
+                  <in>lib502.c</in>
+                  <in>lib503.c</in>
+                  <in>lib504.c</in>
+                  <in>lib505.c</in>
+                  <in>lib506.c</in>
+                  <in>lib507.c</in>
+                  <in>lib508.c</in>
+                  <in>lib509.c</in>
+                  <in>lib510.c</in>
+                  <in>lib511.c</in>
+                  <in>lib512.c</in>
+                  <in>lib513.c</in>
+                  <in>lib514.c</in>
+                  <in>lib515.c</in>
+                  <in>lib516.c</in>
+                  <in>lib517.c</in>
+                  <in>lib518.c</in>
+                  <in>lib519.c</in>
+                  <in>lib520.c</in>
+                  <in>lib521.c</in>
+                  <in>lib523.c</in>
+                  <in>lib524.c</in>
+                  <in>lib525.c</in>
+                  <in>lib526.c</in>
+                  <in>lib530.c</in>
+                  <in>lib533.c</in>
+                  <in>lib536.c</in>
+                  <in>lib537.c</in>
+                  <in>lib539.c</in>
+                  <in>lib540.c</in>
+                  <in>lib541.c</in>
+                  <in>lib542.c</in>
+                  <in>lib543.c</in>
+                  <in>lib544.c</in>
+                  <in>lib547.c</in>
+                  <in>lib549.c</in>
+                  <in>lib552.c</in>
+                  <in>lib553.c</in>
+                  <in>lib554.c</in>
+                  <in>lib555.c</in>
+                  <in>lib556.c</in>
+                  <in>lib557.c</in>
+                  <in>lib558.c</in>
+                  <in>lib560.c</in>
+                  <in>lib562.c</in>
+                  <in>lib564.c</in>
+                  <in>lib566.c</in>
+                  <in>lib567.c</in>
+                  <in>lib568.c</in>
+                  <in>lib569.c</in>
+                  <in>lib570.c</in>
+                  <in>lib571.c</in>
+                  <in>lib572.c</in>
+                  <in>lib573.c</in>
+                  <in>lib574.c</in>
+                  <in>lib575.c</in>
+                  <in>lib576.c</in>
+                  <in>lib578.c</in>
+                  <in>lib579.c</in>
+                  <in>lib582.c</in>
+                  <in>lib583.c</in>
+                  <in>lib586.c</in>
+                  <in>lib590.c</in>
+                  <in>lib591.c</in>
+                  <in>lib597.c</in>
+                  <in>lib598.c</in>
+                  <in>lib599.c</in>
+                  <in>libauthretry.c</in>
+                  <in>libntlmconnect.c</in>
+                  <in>sethostname.c</in>
+                  <in>sethostname.h</in>
+                  <in>test.h</in>
+                  <in>testtrace.c</in>
+                  <in>testtrace.h</in>
+                  <in>testutil.c</in>
+                  <in>testutil.h</in>
+                </df>
+                <df name="server">
+                  <in>fake_ntlm.c</in>
+                  <in>getpart.c</in>
+                  <in>getpart.h</in>
+                  <in>resolve.c</in>
+                  <in>rtspd.c</in>
+                  <in>server_setup.h</in>
+                  <in>server_sockaddr.h</in>
+                  <in>sockfilt.c</in>
+                  <in>sws.c</in>
+                  <in>testpart.c</in>
+                  <in>tftp.h</in>
+                  <in>tftpd.c</in>
+                  <in>util.c</in>
+                  <in>util.h</in>
+                </df>
+                <df name="unit">
+                  <in>curlcheck.h</in>
+                  <in>unit1300.c</in>
+                  <in>unit1301.c</in>
+                  <in>unit1302.c</in>
+                  <in>unit1303.c</in>
+                  <in>unit1304.c</in>
+                  <in>unit1305.c</in>
+                  <in>unit1307.c</in>
+                  <in>unit1308.c</in>
+                  <in>unit1309.c</in>
+                  <in>unit1330.c</in>
+                  <in>unit1394.c</in>
+                  <in>unit1395.c</in>
+                  <in>unit1396.c</in>
+                  <in>unit1397.c</in>
+                  <in>unit1398.c</in>
+                  <in>unit1600.c</in>
+                  <in>unit1601.c</in>
+                </df>
+              </df>
+              <df name="winbuild">
+              </df>
+            </df>
+            <df name="googletest">
+              <df name="build-aux">
+              </df>
+              <df name="cmake">
+              </df>
+              <df name="codegear">
+                <in>gtest_all.cc</in>
+                <in>gtest_link.cc</in>
+              </df>
+              <df name="include">
+                <df name="gtest">
+                  <df name="internal">
+                    <in>gtest-death-test-internal.h</in>
+                    <in>gtest-filepath.h</in>
+                    <in>gtest-internal.h</in>
+                    <in>gtest-linked_ptr.h</in>
+                    <in>gtest-param-util-generated.h</in>
+                    <in>gtest-param-util.h</in>
+                    <in>gtest-port.h</in>
+                    <in>gtest-string.h</in>
+                    <in>gtest-tuple.h</in>
+                    <in>gtest-type-util.h</in>
+                  </df>
+                  <in>gtest-death-test.h</in>
+                  <in>gtest-message.h</in>
+                  <in>gtest-param-test.h</in>
+                  <in>gtest-printers.h</in>
+                  <in>gtest-spi.h</in>
+                  <in>gtest-test-part.h</in>
+                  <in>gtest-typed-test.h</in>
+                  <in>gtest.h</in>
+                  <in>gtest_pred_impl.h</in>
+                  <in>gtest_prod.h</in>
+                </df>
+              </df>
+              <df name="m4">
+              </df>
+              <df name="make">
+              </df>
+              <df name="msvc">
+              </df>
+              <df name="samples">
+                <in>prime_tables.h</in>
+                <in>sample1.cc</in>
+                <in>sample1.h</in>
+                <in>sample10_unittest.cc</in>
+                <in>sample1_unittest.cc</in>
+                <in>sample2.cc</in>
+                <in>sample2.h</in>
+                <in>sample2_unittest.cc</in>
+                <in>sample3-inl.h</in>
+                <in>sample3_unittest.cc</in>
+                <in>sample4.cc</in>
+                <in>sample4.h</in>
+                <in>sample4_unittest.cc</in>
+                <in>sample5_unittest.cc</in>
+                <in>sample6_unittest.cc</in>
+                <in>sample7_unittest.cc</in>
+                <in>sample8_unittest.cc</in>
+                <in>sample9_unittest.cc</in>
+              </df>
+              <df name="scripts">
+                <df name="test">
+                </df>
+              </df>
+              <df name="src">
+                <in>gtest-all.cc</in>
+                <in>gtest-death-test.cc</in>
+                <in>gtest-filepath.cc</in>
+                <in>gtest-internal-inl.h</in>
+                <in>gtest-port.cc</in>
+                <in>gtest-printers.cc</in>
+                <in>gtest-test-part.cc</in>
+                <in>gtest-typed-test.cc</in>
+                <in>gtest.cc</in>
+                <in>gtest_main.cc</in>
+              </df>
+              <df name="test">
+                <in>gtest-death-test_ex_test.cc</in>
+                <in>gtest-death-test_test.cc</in>
+                <in>gtest-filepath_test.cc</in>
+                <in>gtest-linked_ptr_test.cc</in>
+                <in>gtest-listener_test.cc</in>
+                <in>gtest-message_test.cc</in>
+                <in>gtest-options_test.cc</in>
+                <in>gtest-param-test2_test.cc</in>
+                <in>gtest-param-test_test.cc</in>
+                <in>gtest-param-test_test.h</in>
+                <in>gtest-port_test.cc</in>
+                <in>gtest-printers_test.cc</in>
+                <in>gtest-test-part_test.cc</in>
+                <in>gtest-tuple_test.cc</in>
+                <in>gtest-typed-test2_test.cc</in>
+                <in>gtest-typed-test_test.cc</in>
+                <in>gtest-typed-test_test.h</in>
+                <in>gtest-unittest-api_test.cc</in>
+                <in>gtest_all_test.cc</in>
+                <in>gtest_break_on_failure_unittest_.cc</in>
+                <in>gtest_catch_exceptions_test_.cc</in>
+                <in>gtest_color_test_.cc</in>
+                <in>gtest_env_var_test_.cc</in>
+                <in>gtest_environment_test.cc</in>
+                <in>gtest_filter_unittest_.cc</in>
+                <in>gtest_help_test_.cc</in>
+                <in>gtest_list_tests_unittest_.cc</in>
+                <in>gtest_main_unittest.cc</in>
+                <in>gtest_no_test_unittest.cc</in>
+                <in>gtest_output_test_.cc</in>
+                <in>gtest_pred_impl_unittest.cc</in>
+                <in>gtest_premature_exit_test.cc</in>
+                <in>gtest_prod_test.cc</in>
+                <in>gtest_repeat_test.cc</in>
+                <in>gtest_shuffle_test_.cc</in>
+                <in>gtest_sole_header_test.cc</in>
+                <in>gtest_stress_test.cc</in>
+                <in>gtest_throw_on_failure_ex_test.cc</in>
+                <in>gtest_throw_on_failure_test_.cc</in>
+                <in>gtest_uninitialized_test_.cc</in>
+                <in>gtest_unittest.cc</in>
+                <in>gtest_xml_outfile1_test_.cc</in>
+                <in>gtest_xml_outfile2_test_.cc</in>
+                <in>gtest_xml_output_unittest_.cc</in>
+                <in>production.cc</in>
+                <in>production.h</in>
+              </df>
+              <df name="xcode">
+                <df name="Config">
+                </df>
+                <df name="gtest.xcodeproj">
+                </df>
+                <df name="Resources">
+                </df>
+                <df name="Samples">
+                  <df name="FrameworkSample">
+                    <df name="WidgetFramework.xcodeproj">
+                    </df>
+                    <in>widget.cc</in>
+                    <in>widget.h</in>
+                    <in>widget_test.cc</in>
+                  </df>
+                </df>
+                <df name="Scripts">
+                </df>
+              </df>
+            </df>
+            <df name="mongoose">
+              <df name="docs">
+              </df>
+              <df name="examples">
+                <df name="big_upload">
+                  <in>big_upload.c</in>
+                </df>
+                <df name="cookie_authentication">
+                  <in>cookie_auth.c</in>
+                </df>
+                <df name="csharp">
+                </df>
+                <df name="digest_authentication">
+                  <in>digest_auth.c</in>
+                </df>
+                <df name="file_upload">
+                  <in>file_upload.c</in>
+                </df>
+                <df name="form_submit">
+                  <in>form_submit.c</in>
+                </df>
+                <df name="hello_world">
+                  <in>hello_world.c</in>
+                </df>
+                <df name="http_client">
+                  <in>http_client.c</in>
+                </df>
+                <df name="mjpg_streamer">
+                  <in>mjpg_streamer.c</in>
+                </df>
+                <df name="multi_threaded_server">
+                  <in>multi_threaded_server.c</in>
+                </df>
+                <df name="proxy_server">
+                  <df name="proxy_web_root">
+                    <df name="app1">
+                    </df>
+                    <df name="app2">
+                    </df>
+                  </df>
+                  <in>proxy_server.c</in>
+                </df>
+                <df name="restful_api">
+                  <in>restful_api.c</in>
+                </df>
+                <df name="send_file">
+                  <in>send_file.c</in>
+                </df>
+                <df name="web_server">
+                  <df name="certs">
+                  </df>
+                  <in>web_server.c</in>
+                </df>
+                <df name="websocket_chat">
+                  <in>websocket_chat.c</in>
+                </df>
+                <df name="websocket_echo_server">
+                  <in>websocket_echo_server.c</in>
+                </df>
+                <df name="websocket_ssl_proxy">
+                  <df name="certs">
+                  </df>
+                  <in>net_skeleton.h</in>
+                  <in>ssl_wrapper.c</in>
+                  <in>ssl_wrapper.h</in>
+                  <in>ws_ssl.c</in>
+                </df>
+              </df>
+              <df name="jni">
+              </df>
+              <df name="scripts">
+              </df>
+              <df name="test">
+                <in>unit_test.c</in>
+              </df>
+              <in>mongoose.c</in>
+              <in>mongoose.h</in>
+            </df>
+          </df>
+          <df name="test">
+            <in>async_tests.cpp</in>
+            <in>callback_tests.cpp</in>
+            <in>delete_tests.cpp</in>
+            <in>get_tests.cpp</in>
+            <in>head_tests.cpp</in>
+            <in>post_tests.cpp</in>
+            <in>proxy_tests.cpp</in>
+            <in>put_tests.cpp</in>
+            <in>raw_body_tests.cpp</in>
+            <in>server.cpp</in>
+            <in>server.h</in>
+            <in>session_tests.cpp</in>
+          </df>
         </df>
         <df name="json">
           <df name="benchmarks">

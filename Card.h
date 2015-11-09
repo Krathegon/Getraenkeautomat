@@ -16,7 +16,9 @@ using namespace std;
 class Card {
 public:
     Card();
+    Card(Card &card);
     Card(string id, string type);
+    bool equals(Card &card);
     
     string id;
     string type;

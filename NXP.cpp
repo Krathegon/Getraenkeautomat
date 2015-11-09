@@ -175,7 +175,7 @@ uint32_t NXP::DetectMifare()
         if (!detected_card)
         {
             printf("undetermined MIFARE card detected\n");
-            return true;
+            return false;
         }
         
         safeCard(bLength, bUid, sak_atqa);
