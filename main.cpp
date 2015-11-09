@@ -167,13 +167,15 @@ void cardTimeout() {
 }
 
 void processSelection(Card &card, char slot) {
-    cout << "Selection: " << char(slot+'0') << endl;
+    cout << "Selection: " << to_string(slot) << endl;
     
-    Response r = Post( Url{HISTORY_API}, Parameters{{"card_id", card.id},{"slot", slot}} );
+    Response r = Post( Url{HISTORY_API}, Payload{{"card_id", card.id},{"slot", to_string(slot)}} );
     
     // TODO: handle response failure
     if(r.status_code != 201) {
         cout << "Couldn't save History, Reason: " << r.text << endl;
+    } else {
+        cout << "Answer: " << r.text << endl;
     }
 }
 
