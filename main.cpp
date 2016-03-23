@@ -12,7 +12,7 @@
 #include <chrono>
 #include <cerrno>
 #include <wiringPi.h>
-#include <cpr.h>
+#include <cpr/cpr.h>
 #include <json.hpp>
 
 #include "NXP.h"
