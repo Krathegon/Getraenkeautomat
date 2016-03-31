@@ -50,8 +50,9 @@ void initGPIO() {
     digitalWrite(LED_GREEN, LED_OFF);
     
     // reset RFID board
-    digitalWrite(RFID_RESET, HIGH);
     digitalWrite(RFID_RESET, LOW);
+    this_thread::sleep_for(chrono::milliseconds(100));
+    digitalWrite(RFID_RESET, HIGH);
 }
 
 bool init() {
