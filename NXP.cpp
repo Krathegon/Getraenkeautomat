@@ -59,6 +59,22 @@ bool NXP::init()
         return false;
     }
     
+    uint8_t version;
+    status = phhalHw_ReadRegister(
+            &halReader,
+            PHHAL_HW_RC523_REG_VERSION,
+            &version
+            );
+
+    /*
+     * We have to read version to make sure that NXP Board is connected
+     */
+    if (PH_ERR_SUCCESS != status || !(version == 0x80 || version == 0x82) )
+    {
+        printf("Failed to read version, is NXP Board connected?\n");
+        return false;
+    }
+    
     return true;
 }
 
