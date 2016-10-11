@@ -27,7 +27,7 @@
 #define LED_ON          LOW
 #define LED_OFF         HIGH
 
-#define CARD_TIMEOUT    30
+#define CARD_TIMEOUT    10
 
 #define REST_API        "http://localhost:8080/api/"
 #define CARDS_API       REST_API "cards/"
@@ -96,6 +96,11 @@ bool validCard(Card &card) {
     cout << "Checking if card with ID " << card.id << " and type " << card.type << " is valid ..." << endl;
     
     Response r = Get( Url{CARDS_API + card.id} );
+    
+    if(r.error) {
+        cout << "Couldn't connect to Jetty: " << r.error.message << endl;
+        return false;
+    }
     
     if(r.status_code == 404) {
         cout << "Card " << card.id << " not found, saving in DB..." << endl;
@@ -220,22 +225,18 @@ int main(int argc, char **argv)
             }
         } else {
             oldCard={};
+            rfid.flush();
         }
         // check commands from CW-Board
         if(cwBoard.dataAvailable()) {
             Command retCommand = cwBoard.getCommand();
 
             if(sameCommand(retCommand, CMD_SLOT)) {
-                if(active) {
-                    processSelection(card, retCommand.last);
+                processSelection(card, retCommand.last);
 
-                    // deactivate LED
-                    switchLED(LED_GREEN, LED_OFF);
-                    active = false;
-                } else {
-                    cout << "Command not allowed: " << retCommand.first << retCommand.last << endl;
-                    cwBoard.putCommand(CMD_ERROR);
-                }
+                // deactivate LED
+                switchLED(LED_GREEN, LED_OFF);
+                active = false;
             }
             else if(sameCommand(retCommand, CMD_MOTOR_FAIL)) {
                 motorFail();

@@ -8,9 +8,9 @@
 #include "CWBoard.h"
 
 const int CW_BAUDRATE  = 9600;
-const char CW_DEVICE[] = "/dev/ttyUSB0";
+const char CW_INTERFACE[] = "ttyUSB";
 
-CWBoard cwBoard(CW_DEVICE, CW_BAUDRATE);
+CWBoard cwBoard(CW_INTERFACE, CW_BAUDRATE);
 
 using namespace std;
 
@@ -28,10 +28,10 @@ bool CWBoard::sendActiveCommand(Command command) {
         return false;
 
     for(int i=0; i<MAX_RETRY; i++) {
-        cwBoard.putCommand(command);
+        putCommand(command);
 
         this_thread::sleep_for(chrono::milliseconds(50));
-        retCommand = cwBoard.getCommand();
+        retCommand = getCommand();
 
         if(sameCommand(retCommand, CMD_OK)) {
             success = true;

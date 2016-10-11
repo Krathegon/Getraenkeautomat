@@ -16,19 +16,23 @@ using namespace std;
 
 class SerialDevice {
 public:
-    SerialDevice(string device, int baud);
+    SerialDevice(string interface, int baud);
     virtual ~SerialDevice();
     bool open();
     void close();
+    void tryReconnect();
+    void setDevice();
     void putChar(unsigned char c);
     void putString(string s);
     bool dataAvailable(); 
     char getChar();
     void flush();
     
-private:
+    string interface;
     string device;
     int baud;
+    
+private:
     int fileDescriptor;
 };
 

@@ -21,11 +21,10 @@ using namespace std;
 
 class CWBoard : public SerialDevice {
 public:
-    CWBoard(string device, int baud) : SerialDevice(device, baud) {};
+    CWBoard(string interface, int baud) : SerialDevice(interface, baud) {};
     void putCommand(const Command command);
     bool sendActiveCommand(Command command);
     Command getCommand();
-private:
 };
 
 extern CWBoard cwBoard;
