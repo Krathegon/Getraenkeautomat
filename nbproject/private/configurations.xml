@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="95">
+<configurationDescriptor version="97">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
       <df name="build">
+        <df name="bin">
+        </df>
         <df name="CMakeFiles">
+          <df name="3.0.2">
+            <df name="CompilerIdC">
+              <in>CMakeCCompilerId.c</in>
+            </df>
+            <df name="CompilerIdCXX">
+              <in>CMakeCXXCompilerId.cpp</in>
+            </df>
+          </df>
+          <df name="CheckTypeSize">
+            <in>CURL_SIZEOF_CURL_SOCKLEN_T.c</in>
+            <in>SIZEOF_CURL_OFF_T.c</in>
+            <in>SIZEOF_INT.c</in>
+            <in>SIZEOF_LONG.c</in>
+            <in>SIZEOF_LONG_DOUBLE.c</in>
+            <in>SIZEOF_LONG_LONG.c</in>
+            <in>SIZEOF_SHORT.c</in>
+            <in>SIZEOF_SIG_ATOMIC_T.c</in>
+            <in>SIZEOF_SIZE_T.c</in>
+            <in>SIZEOF_SSIZE_T.c</in>
+            <in>SIZEOF_STRUCT_SOCKADDR_STORAGE.c</in>
+            <in>SIZEOF_TIME_T.c</in>
+            <in>SIZEOF___INT64.c</in>
+          </df>
           <df name="CMakeTmp">
-          </df>
-          <df name="CompilerIdC">
-            <in>CMakeCCompilerId.c</in>
-          </df>
-          <df name="CompilerIdCXX">
-            <in>CMakeCXXCompilerId.cpp</in>
           </df>
           <df name="Getraenkeautomat.dir">
             <df name="lib">
@@ -162,8 +181,6 @@
               </df>
             </df>
           </df>
-          <df name="Progress">
-          </df>
         </df>
         <df name="lib">
           <df name="CMakeFiles">
@@ -180,6 +197,35 @@
             <df name="opt">
               <df name="CMakeFiles">
               </df>
+              <df name="curl">
+                <df name="CMakeFiles">
+                </df>
+                <df name="include">
+                  <df name="curl">
+                    <in>curlbuild.h</in>
+                  </df>
+                </df>
+                <df name="lib">
+                  <df name="CMakeFiles">
+                    <df name="libcurl.dir">
+                      <df name="vtls">
+                      </df>
+                    </df>
+                  </df>
+                  <in>curl_config.h</in>
+                </df>
+                <df name="src">
+                  <df name="CMakeFiles">
+                    <df name="curl.dir">
+                      <df name="__">
+                        <df name="lib">
+                        </df>
+                      </df>
+                    </df>
+                  </df>
+                  <in>tool_hugehelp.c</in>
+                </df>
+              </df>
             </df>
           </df>
         </df>
@@ -191,6 +237,7 @@
             <in>cookies.cpp</in>
             <in>cprtypes.cpp</in>
             <in>digest.cpp</in>
+            <in>error.cpp</in>
             <in>multipart.cpp</in>
             <in>parameters.cpp</in>
             <in>payload.cpp</in>
@@ -199,23 +246,27 @@
             <in>util.cpp</in>
           </df>
           <df name="include">
-            <in>api.h</in>
-            <in>auth.h</in>
-            <in>body.h</in>
-            <in>cookies.h</in>
-            <in>cpr.h</in>
-            <in>cprtypes.h</in>
-            <in>curlholder.h</in>
-            <in>defines.h</in>
-            <in>digest.h</in>
-            <in>multipart.h</in>
-            <in>parameters.h</in>
-            <in>payload.h</in>
-            <in>proxies.h</in>
-            <in>response.h</in>
-            <in>session.h</in>
-            <in>timeout.h</in>
-            <in>util.h</in>
+            <df name="cpr">
+              <in>api.h</in>
+              <in>auth.h</in>
+              <in>body.h</in>
+              <in>cookies.h</in>
+              <in>cpr.h</in>
+              <in>cprtypes.h</in>
+              <in>curlholder.h</in>
+              <in>defines.h</in>
+              <in>digest.h</in>
+              <in>error.h</in>
+              <in>max_redirects.h</in>
+              <in>multipart.h</in>
+              <in>parameters.h</in>
+              <in>payload.h</in>
+              <in>proxies.h</in>
+              <in>response.h</in>
+              <in>session.h</in>
+              <in>timeout.h</in>
+              <in>util.h</in>
+            </df>
           </df>
           <df name="opt">
             <df name="curl">
@@ -249,12 +300,16 @@
                   <in>ftpuploadresume.c</in>
                   <in>getinfo.c</in>
                   <in>getinmemory.c</in>
+                  <in>getredirect.c</in>
                   <in>ghiper.c</in>
                   <in>hiperfifo.c</in>
                   <in>href_extractor.c</in>
                   <in>htmltidy.c</in>
                   <in>htmltitle.cpp</in>
                   <in>http-post.c</in>
+                  <in>http2-download.c</in>
+                  <in>http2-serverpush.c</in>
+                  <in>http2-upload.c</in>
                   <in>httpcustomheader.c</in>
                   <in>httpput.c</in>
                   <in>https.c</in>
@@ -347,6 +402,8 @@
                   <in>gskit.h</in>
                   <in>gtls.c</in>
                   <in>gtls.h</in>
+                  <in>mbedtls.c</in>
+                  <in>mbedtls.h</in>
                   <in>nss.c</in>
                   <in>nssg.h</in>
                   <in>openssl.c</in>
@@ -367,8 +424,6 @@
                 <in>asyn-thread.c</in>
                 <in>asyn.h</in>
                 <in>base64.c</in>
-                <in>bundles.c</in>
-                <in>bundles.h</in>
                 <in>config-amigaos.h</in>
                 <in>config-dos.h</in>
                 <in>config-mac.h</in>
@@ -628,10 +683,6 @@
                   </df>
                 </df>
               </df>
-              <df name="perl">
-                <df name="contrib">
-                </df>
-              </df>
               <df name="projects">
                 <df name="Windows">
                   <df name="VC10">
@@ -647,6 +698,12 @@
                     </df>
                   </df>
                   <df name="VC12">
+                    <df name="lib">
+                    </df>
+                    <df name="src">
+                    </df>
+                  </df>
+                  <df name="VC14">
                     <df name="lib">
                     </df>
                     <df name="src">
@@ -683,6 +740,9 @@
                     </df>
                   </df>
                 </df>
+                <in>wolfssl_options.h</in>
+              </df>
+              <df name="scripts">
               </df>
               <df name="src">
                 <df name="macos">
@@ -691,6 +751,8 @@
                     <in>macos_main.cpp</in>
                   </df>
                 </df>
+                <in>slist_wc.c</in>
+                <in>slist_wc.h</in>
                 <in>tool_binmode.c</in>
                 <in>tool_binmode.h</in>
                 <in>tool_bname.c</in>
@@ -801,6 +863,8 @@
                   <in>lib1527.c</in>
                   <in>lib1528.c</in>
                   <in>lib1529.c</in>
+                  <in>lib1530.c</in>
+                  <in>lib1531.c</in>
                   <in>lib1900.c</in>
                   <in>lib500.c</in>
                   <in>lib501.c</in>
@@ -916,6 +980,8 @@
                   <in>unit1398.c</in>
                   <in>unit1600.c</in>
                   <in>unit1601.c</in>
+                  <in>unit1602.c</in>
+                  <in>unit1603.c</in>
                 </df>
               </df>
               <df name="winbuild">
@@ -1149,8 +1215,11 @@
             <in>async_tests.cpp</in>
             <in>callback_tests.cpp</in>
             <in>delete_tests.cpp</in>
+            <in>error_tests.cpp</in>
             <in>get_tests.cpp</in>
             <in>head_tests.cpp</in>
+            <in>options_tests.cpp</in>
+            <in>patch_tests.cpp</in>
             <in>post_tests.cpp</in>
             <in>proxy_tests.cpp</in>
             <in>put_tests.cpp</in>
@@ -1161,6 +1230,8 @@
           </df>
         </df>
         <df name="json">
+          <df name=".github">
+          </df>
           <df name="benchmarks">
             <df name="files">
               <df name="jeopardy">
@@ -1195,6 +1266,7 @@
               <in>basic_json__boolean_t.cpp</in>
               <in>basic_json__const_int.cpp</in>
               <in>basic_json__copyassignment.cpp</in>
+              <in>basic_json__istream.cpp</in>
               <in>basic_json__list_init_t.cpp</in>
               <in>basic_json__moveconstructor.cpp</in>
               <in>basic_json__nullptr_t.cpp</in>
@@ -1204,6 +1276,7 @@
               <in>basic_json__size_type_basic_json.cpp</in>
               <in>basic_json__string_t.cpp</in>
               <in>basic_json__string_t_value_type.cpp</in>
+              <in>basic_json__value.cpp</in>
               <in>basic_json__value_t.cpp</in>
               <in>begin.cpp</in>
               <in>cbegin.cpp</in>
@@ -1224,6 +1297,7 @@
               <in>get__PointerType.cpp</in>
               <in>get__ValueType_const.cpp</in>
               <in>get_ptr.cpp</in>
+              <in>get_ref.cpp</in>
               <in>insert.cpp</in>
               <in>insert__count.cpp</in>
               <in>insert__ilist.cpp</in>
@@ -1235,6 +1309,7 @@
               <in>is_number.cpp</in>
               <in>is_number_float.cpp</in>
               <in>is_number_integer.cpp</in>
+              <in>is_number_unsigned.cpp</in>
               <in>is_object.cpp</in>
               <in>is_primitive.cpp</in>
               <in>is_string.cpp</in>
@@ -1290,6 +1365,7 @@
             <df name="json_testsuite">
             </df>
             <in>catch.hpp</in>
+            <in>fuzz.cpp</in>
             <in>unit.cpp</in>
           </df>
         </df>
@@ -1629,6 +1705,8 @@
       <in>CWBoard.h</in>
       <in>Card.cpp</in>
       <in>Card.h</in>
+      <in>Logger.cpp</in>
+      <in>Logger.h</in>
       <in>NXP.cpp</in>
       <in>NXP.h</in>
       <in>RFIDBoard.cpp</in>

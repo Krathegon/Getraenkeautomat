@@ -20,6 +20,7 @@
 #include "CWBoard.h"
 #include "RFIDBoard.h"
 #include "Card.h"
+#include "Logger.h"
 
 #define RFID_RESET      1
 #define LED_RED         4
@@ -58,29 +59,31 @@ void initGPIO() {
 bool init() {
     initGPIO();
     
+    log4cpp::Category& root = logger.getLogger();
+    
     // init serial devices
     if(!cwBoard.open()) {
-        cout << "Can't connect to CW-Board: " << strerror(errno) << endl;
+        root.error(string("Can't connect to CW-Board: ").append(strerror(errno)));
         return false;
     }
     
     if(!rfid.open()) {
-        cout << "Can't connect to RFID-Board: " << strerror(errno) << endl;
+        root.error(string("Can't connect to RFID-Board: ").append(strerror(errno)));
         return false;
     }
     
     if(!nxp.init()) {
-        cout << "Can't connect to NXP Board!" << endl;
-       return false; 
+        root.error("Can't connect to NXP Board: ");
+        return false; 
     }
     
     // first of all check if cw board is reachable
     if(!cwBoard.sendActiveCommand(CMD_TEST)) {
-        cout << "There's a problem with the UART-connection of the CW-Board!" << endl;
+        root.error("There's a problem with the UART-connection of the CW-Board!");
         return false;
     }
     
-    cout << "Init finished!" << endl;
+    root.info("Init finished!");
     return true;
 }
 
@@ -93,39 +96,43 @@ void switchLED(int led, int state) {
 }
 
 bool validCard(Card &card) {
-    cout << "Checking if card with ID " << card.id << " and type " << card.type << " is valid ..." << endl;
+    log4cpp::Category& root = logger.getLogger();
+    
+    root.info(string("Checking if card with ID ").append(card.id).append(" and type ")
+            .append(card.type).append(" is valid ..."));
     
     Response r = Get( Url{CARDS_API + card.id} );
     
     if(r.error) {
-        cout << "Couldn't connect to Jetty: " << r.error.message << endl;
+        root.error(string("Couldn't connect to Jetty: ").append(r.error.message));
         return false;
     }
     
     if(r.status_code == 404) {
-        cout << "Card " << card.id << " not found, saving in DB..." << endl;
+        root.info(string("Card ").append(card.id).append(" not found, saving in DB..."));
         r = Put( Url{CARDS_API + card.id}, Parameters{{"type", card.type}} );
         
         // TODO: handle response failure
         if(r.status_code != 201) {
-            cout << "Couldn't save Card, Reason: " << r.text << endl;
+            root.error(string("Couldn't save Card, Reason: ").append(r.text));
         }
         
         return false;
     }
     
-    cout << "Parsing JSON returned from server " << CARDS_API << " ..." << endl;
+    root.info(string("Parsing JSON returned from server ").append(CARDS_API).append(" ..."));
     json responseCard = json::parse(r.text);
     
-    cout << "JSON parsed, extracting user ..." << endl;
+    root.info("JSON parsed, extracting user ...");
     json user = responseCard["user"];
     
     if(user.empty()) {
-        cout << "Card " << card.id << " has no user!" << endl;
+        root.error(string("Card ").append(card.id).append(" has no user!"));
         return false;
     }
     
-    cout << "Card " << card.id << " responds to user " << user["firstname"] << " " << user["lastname"] << "." << endl;
+    root.info(string("Card ").append(card.id).append(" responds to user ")
+            .append(user["firstname"]).append(" ").append(user["lastname"]).append("."));
     return true;
 }
 
@@ -134,12 +141,14 @@ void setScannedTime(Card &card) {
 }
 
 bool getCard(Card &card) {
+    log4cpp::Category& root = logger.getLogger();
+    
     // check NFC
     if(nxp.detectCard()) {
         card = nxp.getCard();
         setScannedTime(card);
         
-        cout << "NXP Card found: " << "ID->" << card.id << "  Type->" << card.type << endl; 
+        root.info(string("NXP Card found: ID->").append(card.id).append("  Type->").append(card.type));
         return true;
     }
 
@@ -148,7 +157,7 @@ bool getCard(Card &card) {
         card = rfid.getCard();
         setScannedTime(card);
         
-        cout << "RFID Card found: " << "ID->" << card.id << "  Type->" << card.type << endl; 
+        root.info(string("RFID Card found: ID->").append(card.id).append("  Type->").append(card.type));
         return true;
     }
     
@@ -156,8 +165,11 @@ bool getCard(Card &card) {
 }
 
 void cardError() {
+    log4cpp::Category& root = logger.getLogger();
+    
+    root.info("Card Error!");
+    
     // let the red LED blink 3 times every 200ms
-    cout << "Card Error!" << endl;
     for(int i=0; i<6; i++) {
         switchLED(LED_RED, i%2);
         this_thread::sleep_for(chrono::milliseconds(200));
@@ -165,7 +177,9 @@ void cardError() {
 }
 
 void cardTimeout() {
-    cout << "Card Timeout! (LEDs off)" << endl;
+    log4cpp::Category& root = logger.getLogger();
+    
+    root.info("Card Timeout! (LEDs off)");
     cwBoard.sendActiveCommand(CMD_NO_CARD);
 
     // deactivate LED
@@ -173,32 +187,38 @@ void cardTimeout() {
 }
 
 void processSelection(Card &card, char slot) {
-    cout << "Selection: " << to_string(slot) << endl;
+    log4cpp::Category& root = logger.getLogger();
+    
+    root.info(string("Selection: ").append(to_string(slot)));
     
     Response r = Post( Url{HISTORY_API}, Payload{{"card_id", card.id},{"slot", to_string(slot)}} );
     
     // TODO: handle response failure
     if(r.status_code != 201) {
-        cout << "Couldn't save History, Reason: " << r.text << endl;
-    } else {
-        cout << "Answer: " << r.text << endl;
+        root.error(string("Couldn't save History, Reason: ").append(r.text));
     }
 }
 
 void motorFail() {
     // TODO: handle motor failure
-    cout << "Motor Failure!" << endl;
+    log4cpp::Category& root = logger.getLogger();
+    
+    root.error("Motor Failure!");
 }
 
 void handleEmpty(unsigned int emptySlots) {
     // TODO: safe empty slots
-    cout << "Empty: " << bitset<6>(emptySlots) << endl;
+    log4cpp::Category& root = logger.getLogger();
+    
+    root.info(string("Empty: ").append(bitset<6>(emptySlots).to_string()));
 }
 
 int main(int argc, char **argv)
 {
     Card card, oldCard;
     bool active = false;
+    
+    log4cpp::Category& root = logger.getLogger();
     
     if(!init()) {
         exit(EXIT_FAILURE);
@@ -215,7 +235,7 @@ int main(int argc, char **argv)
                         active = true;
                     }
                     else {
-                        cout << "Retry limit has been reached." << endl;
+                        root.error("Retry limit for command CARD_ACTIVE has been reached.");
                     }
                 } else {
                     cardError();
@@ -245,7 +265,9 @@ int main(int argc, char **argv)
                 handleEmpty(retCommand.last);
             }
             else {
-                cout << "Couldn't understand Command: " << retCommand.first << retCommand.last << endl;
+                root.error(string("Couldn't understand Command: ")
+                    .append(to_string(retCommand.first)).append(to_string(retCommand.last)));
+                
                 cwBoard.putCommand(CMD_ERROR);
             }
         }

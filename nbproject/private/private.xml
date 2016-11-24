@@ -10,11 +10,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>rfs://pi@192.168.120.124:22/home/pi/Getraenkeautomat/Card.h</file>
-            <file>rfs://pi@192.168.120.124:22/home/pi/Getraenkeautomat/Card.cpp</file>
-            <file>rfs://pi@192.168.120.124:22/home/pi/Getraenkeautomat/NXP.cpp</file>
-            <file>rfs://pi@192.168.120.124:22/home/pi/Getraenkeautomat/main.cpp</file>
-            <file>rfs://pi@192.168.120.124:22/home/pi/Getraenkeautomat/RFIDBoard.cpp</file>
+            <file>rfs://pi@drinkpi.local:22/home/pi/Getraenkeautomat/CWBoard.cpp</file>
+            <file>rfs://pi@drinkpi.local:22/home/pi/Getraenkeautomat/NXP.cpp</file>
+            <file>rfs://pi@drinkpi.local:22/home/pi/Getraenkeautomat/CMakeLists.txt</file>
+            <file>rfs://pi@drinkpi.local:22/home/pi/Getraenkeautomat/main.cpp</file>
+            <file>rfs://pi@drinkpi.local:22/home/pi/Getraenkeautomat/SerialDevice.cpp</file>
         </group>
     </open-files>
 </project-private>

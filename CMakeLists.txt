@@ -43,7 +43,7 @@ foreach(dir ${GLIB_INCLUDE_DIRS})
     include_directories( ${dir} )
 endforeach()
 
-set(EXT_LIBS  pthread  wiringPi  glib-2.0  m ${CPR_LIBRARIES})
+set(EXT_LIBS log4cpp pthread wiringPi glib-2.0 m ${CPR_LIBRARIES})
 
 list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/main.cpp")
 list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/protocol.cpp")
@@ -52,6 +52,7 @@ list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/SerialDevice.cpp")
 list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/CWBoard.cpp")
 list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/RFIDBoard.cpp")
 list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/Card.cpp")
+list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/Logger.cpp")
 source_group(src "${PROJECT_SOURCE_DIR}/main.cpp")
 
 file(GLOB_RECURSE SOURCE_TMP "${PROJECT_SOURCE_DIR}/lib/nxprdlib/*.c" )
