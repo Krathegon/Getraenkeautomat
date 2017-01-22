@@ -227,8 +227,6 @@
       </df>
       <in>CWBoard.cpp</in>
       <in>Card.cpp</in>
-      <in>Logger.cpp</in>
-      <in>Logger.h</in>
       <in>NXP.cpp</in>
       <in>RFIDBoard.cpp</in>
       <in>SerialDevice.cpp</in>
@@ -303,10 +301,6 @@
       <item path="Card.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="1">
         </ccTool>
-      </item>
-      <item path="Logger.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Logger.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="NXP.cpp" ex="false" tool="1" flavor2="8">
         <ccTool flags="1">

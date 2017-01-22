@@ -14,13 +14,14 @@
 #include <wiringPi.h>
 #include <cpr/cpr.h>
 #include <json.hpp>
+#include <log4cpp/Category.hh>
+#include <log4cpp/PropertyConfigurator.hh>
 
 #include "NXP.h"
 #include "SerialDevice.h"
 #include "CWBoard.h"
 #include "RFIDBoard.h"
 #include "Card.h"
-#include "Logger.h"
 
 #define RFID_RESET      1
 #define LED_RED         4
@@ -33,6 +34,8 @@
 #define REST_API        "http://localhost:8080/api/"
 #define CARDS_API       REST_API "cards/"
 #define HISTORY_API     REST_API "history/create"
+
+#define PROPERTIES_FILE     "/home/pi/Getraenkeautomat/build/log4cpp.properties"
 
 using namespace std;
 using namespace cpr;
@@ -59,7 +62,7 @@ void initGPIO() {
 bool init() {
     initGPIO();
     
-    log4cpp::Category& root = logger.getLogger();
+    log4cpp::Category& root = log4cpp::Category::getRoot();
     
     // init serial devices
     if(!cwBoard.open()) {
@@ -96,7 +99,7 @@ void switchLED(int led, int state) {
 }
 
 bool validCard(Card &card) {
-    log4cpp::Category& root = logger.getLogger();
+    log4cpp::Category& root = log4cpp::Category::getRoot();
     
     root.info(string("Checking if card with ID ").append(card.id).append(" and type ")
             .append(card.type).append(" is valid ..."));
@@ -141,7 +144,7 @@ void setScannedTime(Card &card) {
 }
 
 bool getCard(Card &card) {
-    log4cpp::Category& root = logger.getLogger();
+    log4cpp::Category& root = log4cpp::Category::getRoot();
     
     // check NFC
     if(nxp.detectCard()) {
@@ -165,7 +168,7 @@ bool getCard(Card &card) {
 }
 
 void cardError() {
-    log4cpp::Category& root = logger.getLogger();
+    log4cpp::Category& root = log4cpp::Category::getRoot();
     
     root.info("Card Error!");
     
@@ -177,7 +180,7 @@ void cardError() {
 }
 
 void cardTimeout() {
-    log4cpp::Category& root = logger.getLogger();
+    log4cpp::Category& root = log4cpp::Category::getRoot();
     
     root.info("Card Timeout! (LEDs off)");
     cwBoard.sendActiveCommand(CMD_NO_CARD);
@@ -187,7 +190,7 @@ void cardTimeout() {
 }
 
 void processSelection(Card &card, char slot) {
-    log4cpp::Category& root = logger.getLogger();
+    log4cpp::Category& root = log4cpp::Category::getRoot();
     
     root.info(string("Selection: ").append(to_string(slot)));
     
@@ -201,24 +204,26 @@ void processSelection(Card &card, char slot) {
 
 void motorFail() {
     // TODO: handle motor failure
-    log4cpp::Category& root = logger.getLogger();
+    log4cpp::Category& root = log4cpp::Category::getRoot();
     
     root.error("Motor Failure!");
 }
 
 void handleEmpty(unsigned int emptySlots) {
     // TODO: safe empty slots
-    log4cpp::Category& root = logger.getLogger();
+    log4cpp::Category& root = log4cpp::Category::getRoot();
     
     root.info(string("Empty: ").append(bitset<6>(emptySlots).to_string()));
 }
 
 int main(int argc, char **argv)
 {
+    log4cpp::PropertyConfigurator::configure(std::string(PROPERTIES_FILE));
+    log4cpp::Category& root = log4cpp::Category::getRoot();
+    
     Card card, oldCard;
     bool active = false;
     
-    log4cpp::Category& root = logger.getLogger();
     
     if(!init()) {
         exit(EXIT_FAILURE);
@@ -265,9 +270,11 @@ int main(int argc, char **argv)
                 handleEmpty(retCommand.last);
             }
             else {
-                root.error(string("Couldn't understand Command: ")
-                    .append(to_string(retCommand.first)).append(to_string(retCommand.last)));
+                string error = string("Couldn't understand Command: ");
+                error.push_back(retCommand.first);
+                error.push_back(retCommand.last);
                 
+                root.error(error);
                 cwBoard.putCommand(CMD_ERROR);
             }
         }

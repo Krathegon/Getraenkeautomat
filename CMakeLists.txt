@@ -52,7 +52,6 @@ list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/SerialDevice.cpp")
 list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/CWBoard.cpp")
 list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/RFIDBoard.cpp")
 list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/Card.cpp")
-list(APPEND SOURCE "${PROJECT_SOURCE_DIR}/Logger.cpp")
 source_group(src "${PROJECT_SOURCE_DIR}/main.cpp")
 
 file(GLOB_RECURSE SOURCE_TMP "${PROJECT_SOURCE_DIR}/lib/nxprdlib/*.c" )

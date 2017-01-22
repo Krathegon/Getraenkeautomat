@@ -1705,8 +1705,6 @@
       <in>CWBoard.h</in>
       <in>Card.cpp</in>
       <in>Card.h</in>
-      <in>Logger.cpp</in>
-      <in>Logger.h</in>
       <in>NXP.cpp</in>
       <in>NXP.h</in>
       <in>RFIDBoard.cpp</in>
